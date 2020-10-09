@@ -44,6 +44,10 @@ nav ul a{
     text-decoration: none;
 }
 
+.danger{
+    color: red;
+}
+
 /* selecting element wit hid value */
 #tow{
     background-color: orange;
