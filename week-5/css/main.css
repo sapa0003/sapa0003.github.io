@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+/* 
+this is our css comment
+shortcut for adding comment is ctrl + /
+ */
+
+h1{
+    color: white;
+}
+
+p{
+    background-color: lightblue;
+}
+/* selecting multiple elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    text-decoration: underline;
+}
+/* selescting child element to change ul */
+nav ul{
+    list-style: none;
+}
+
+/* selecting child element multiple level */
+nav ul a{
+    color: darkslategray;
+    text-decoration: none;
+}
