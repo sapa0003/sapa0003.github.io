@@ -34,3 +34,36 @@ nav ul a{
     color: darkslategray;
     text-decoration: none;
 }
+/* selecting html elements with class names */
+.orange-link{
+    background: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+/* selecting element wit hid value */
+#tow{
+    background-color: orange;
+}
+/* adding multiple classes to an element */
+.large-text{
+    font-size: 20px; 
+}
+
+/* direct child selector */
+article>p{
+    font-size: 24px;
+}
+
+/* adjacent sibling selector 
+selecting only ul that is adjacent to h3*/
+
+h3+ul{
+    /* thickness style colour */
+    border: 1px solid black;
+}
+
+/* attribute selector */
+[href="#tow"]{
+    font-weight: bold;
+}
