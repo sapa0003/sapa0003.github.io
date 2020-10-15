@@ -34,8 +34,7 @@ footer{
 get rid of point on ul and link underlines */
 
 nav ul,
-nav ul a,
-nav ul a:link{
+nav ul a{
     list-style: none;
     text-decoration: none;
     }
