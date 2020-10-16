@@ -1,0 +1,149 @@
+header{
+    background-color: peru;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+/* 
+this is our css comment
+shortcut for adding comment is ctrl + /
+ */
+
+h1{
+    color: white;
+}
+
+p{
+    background-color: lightblue;
+}
+/* selecting multiple elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    text-decoration: underline;
+}
+/* selescting child element to change ul */
+nav ul{
+    list-style: none;
+}
+
+/* selecting child element multiple level */
+nav ul a{
+    color: darkslategray;
+    text-decoration: none;
+}
+/* selecting html elements with class names */
+.orange-link{
+    background: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+.danger{
+    color: red;
+}
+
+/* selecting element wit hid value */
+#tow{
+    background-color: orange;
+}
+/* adding multiple classes to an element */
+.large-text{
+    font-size: 20px; 
+}
+
+/* direct child selector */
+article>p{
+    font-size: 24px;
+}
+
+/* adjacent sibling selector 
+selecting only ul that is adjacent to h3*/
+
+h3+ul{
+    /* thickness style colour */
+    border: 1px solid black;
+}
+
+/* attribute selector */
+[href="#tow"]{
+    font-weight: bold;
+}
+
+/* using pseudo classes
+styling navigation */
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background: orange;
+    /* horizontal vertical blur spread colour */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* position related selectors */
+/* first child  and last child*/
+aside ul li:first-child,
+section ol li:last-child{
+    font-weight: bold;
+}
+
+/* collapse table border into one */
+table{
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    /* hex colour value with 6 characters */
+    background-color: #d5836c;
+}
+
+/* where n is 0, 1, 2... until the number of elements */
+table th:nth-child(n),
+table td:nth-child(n){
+    border: 1px solid #000;
+}
+
+/* in 2n+1 if n is 0, 1,2,,3... then 2n+1 1,3,5,7 etc */
+table td:nth-child(2n+1){
+    /* rgba where a represents opacity
+    full opacity is 1 */
+    background-color: rgba( 0, 0, 0, 0.2);
+}
+
+/* specificity: 0001 */
+footer {
+    background-color: aqua;
+}
+
+/* specificity: 0002 */
+body footer {
+    background-color: orange;
+}
+/* specificity: 0001 */
+footer {
+    background-color: red;
+}
+
+/*specificity 0010 */
+.site-footer {
+    background-color: cornflowerblue;
+}
+
+footer.site-footer{
+    background-color: teal;
+}
