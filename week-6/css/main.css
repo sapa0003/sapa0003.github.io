@@ -60,6 +60,10 @@ nav ul a{
 /* direct child selector */
 article>p{
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /* adjacent sibling selector 
