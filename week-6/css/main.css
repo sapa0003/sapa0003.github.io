@@ -55,16 +55,26 @@ nav ul a{
     background-size: cover;
     /* adding additional style to make text visible */
     color: white;
-    font-size: 24px;
+    /* font-size: 24px; 
+    updating font to rem unit */
+    font-size: 1.5rem;
+    /* default rem value is 16 so 16x1.5= 24px */
+    /* r stands for root element */
+    padding: 1em;
+    /* 1em is equal to the font size of the element so 1x24= 24px */
+    width: 50vw;
+
 }
 /* adding multiple classes to an element */
 .large-text{
-    font-size: 20px; 
+    /* font-size: 20px;  */
+    font-size: 1.25rem;
 }
 
 /* direct child selector */
 article>p{
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.5;
     text-transform: lowercase;
