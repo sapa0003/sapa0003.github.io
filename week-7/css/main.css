@@ -5,6 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
     background-image: url("../images/white_brick_wall.png");
+    padding-top: 90px;
 }
 
 /* 
@@ -81,12 +82,28 @@ img{
     width: 100%;
 }
 
+/* styling the div */
+/* making the container centered and have a max size so it stays the same when resized */
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 .danger{
     color: red;
+}
+/* position Absolute */
+
+.orange-link.large-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* selecting element wit hid value */
 #tow{
+    position: relative;
     background: orange url("../images/bread.jpg") no-repeat center center;
     background-size: cover;
     /* adding additional style to make text visible */
@@ -96,7 +113,7 @@ img{
     font-size: 1.5rem;
     /* default rem value is 16 so 16x1.5= 24px */
     /* r stands for root element */
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     /* 1em is equal to the font size of the element so 1x24= 24px */
     width: 50vw;
 
@@ -132,6 +149,17 @@ h3+ul{
 
 /* using pseudo classes
 styling navigation */
+
+/* navigation fixed */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba( 0, 0, 0, 0.8);
+    z-index: 999;
+}
 
 nav ul a,
 nav ul a:link,
