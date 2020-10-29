@@ -9,6 +9,8 @@
     <body>
         <!-- add a header for the site page -->
         <header>
+            <!-- adding photo -->
+            <img src="images/lone-starfish-wide.jpg" alt="starfish-wide">
             <!-- adding h1 header to display title name of the site -->
             <h1>
                 Lone Starfish
@@ -67,7 +69,50 @@
                 </ul>
             </section>
 
-            <!-- adding section for the contact page -->
+            <!-- adding section for the contact page  which each section is divided by div-->
+
+            <h3>Contact to learn more</h3>
+            
+            <!-- adding name box -->
+
+            <form action="thanks.html" method="get">
+                <div>
+                <label for="fullname">Your Name</label>
+                <input id="fullname" type="text" name="fullname" required>
+                </div>
+
+            <!-- Adding email box -->
+                <div>
+                <label for="useremail">Your Email</label>
+                <input id="useremail" type="email" name="useremail" required>
+                </div>
+
+            <!-- message text box -->
+                <div>
+                <label for="message">Your Message</label>
+                <textarea id="message"></textarea>
+                </div>
+
+            <!-- heading title for buttons -->
+                <div>
+                <h4>Would You Like to visit the starfish?</h4>
+
+            <!-- add radio buttons -->
+
+                <label for="yes">Yes</label>
+                <input id="yes" type="radio" name="starfishvisit">
+
+                <label for="no">No</label>
+                <input id="no" type="radio" name="starfishvisit">
+
+                <label for="maybe">Maybe</label>
+                <input id="maybe" type="radio" name="starfishvisit">
+                </div>
+            <!-- submit buttons -->
+                <button type="submit">Submit</button>
+            </form>
+
+
         </main>
 
         <footer>
