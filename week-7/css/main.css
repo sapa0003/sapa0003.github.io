@@ -110,7 +110,7 @@ img{
     color: white;
     /* font-size: 24px; 
     updating font to rem unit */
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     /* default rem value is 16 so 16x1.5= 24px */
     /* r stands for root element */
     padding: 1em 1em 3em 1em;

@@ -1,0 +1,66 @@
+
+/* change colour of heading title "Lone starfish */
+
+#webtitle{
+    color: white;
+    /* absolute positions lets the title go ontop of the image */
+    position: absolute;
+    top: 25%;
+    right:40%;
+    font-size: 3em;
+
+}
+
+/* create nav bar by using inline properties */
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+/* using nth selector to get rid of last border */
+
+nav ul li:last-child{
+    border: none;
+}
+
+/* want to change the text and background colour*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+}
+
+/* resize image */
+main section img{
+    width: 18%;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+/* life of a starish uses float */
+
+/* add border to the form */
+
+
+/* add classes here */
+
+/* class container for body div */
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* stylizing the form with a border */
+
+form{ 
+    border: 1px solid black;
+    padding: 1em;
+    margin: 2em auto;
+}
