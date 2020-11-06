@@ -12,6 +12,7 @@
 }
 
 /* create nav bar by using inline properties */
+/* have to clear the bullets points in the navigation bar */
 
 nav ul li{
     list-style: none;
@@ -36,9 +37,10 @@ body{
     background-color: #aad4cf;
 }
 
-/* resize image */
+/* resize image for the small starfish image*/
 main section img{
     width: 18%;
+    
 /* life of a starish uses float */   
 
 float: left;
