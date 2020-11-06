@@ -67,6 +67,12 @@ body{
     line-height: inherit;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 img{
     width: 100%;
 }
@@ -166,7 +172,7 @@ p{
         margin-top: 1.5em;
         padding: 1.5em 0;
     }
-}
+
 
 .site-footer .copy{
     text-align: right;
@@ -189,6 +195,26 @@ p{
     .desktop-logo{
         display: inline-block;
         max-width: 300px;
+    }
+
+    .banner{
+        background-image: url("../images/desktop-banner.jpg");
+    }
+
+    .banner h1{
+        color: white;
+    }
+
+    /* app section */
+
+    .app img{
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .app .btn{
+        float: right;
     }
 
 }
