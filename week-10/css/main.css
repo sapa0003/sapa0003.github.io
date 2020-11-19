@@ -127,7 +127,7 @@ p{
     padding: 1em;
 }
 
-/* header */
+/*--------------------------------- header------------------------------- */
 .mobile-logo{
     max-width: 150px;
 }
@@ -149,7 +149,32 @@ p{
     text-transform: uppercase;
 }
 
-/* mobile app section */
+/* navigetion */
+
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+/* love hate */
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited{
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current{
+    background-color: #00ADD8;
+    color: inherit;
+}
+
+
+/* -----------------------------------------------------mobile app section------------------------------------- */
 
 .btn{
     text-decoration: none;
@@ -164,8 +189,20 @@ p{
     background: #00ADD8;
     color: inherit;
 }
+/* -------------------------------------------Actions------------------------- */
+.actions-list{
+    display: flex;
+    flex-flow: row wrap;
+}
 
-/* Footer */
+.actions-list li{
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5 rem;
+}
+
+/*---------------------- Footer--------------------------------------- */
 
     .site-footer{
         border-top: 2px solid  #00ADD8;
@@ -188,6 +225,8 @@ p{
         font-size: 16px;
     }
 
+    /* ---------------------------header------------------------ */
+
     .mobile-logo{
         display: none;
     }
@@ -205,7 +244,23 @@ p{
         color: white;
     }
 
-    /* app section */
+    /* navigation */
+
+    .nav-list{
+        display: flex;
+    }
+
+    .nav-list li{
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+
+    .nav-list li:last-child{
+        border: none;
+    }
+
+    /*------------------------ app section---------------------------- */
 
     .app img{
         width: 40%;
@@ -217,4 +272,14 @@ p{
         float: right;
     }
 
+}
+
+/* ----------------------------------------------------
+        Deskstop styles - 800px
+------------------------------------------------------*/
+
+@media screen and (min-width:800px){
+    .actions-list li{
+        max-width: 20%;
+    }
 }
