@@ -215,6 +215,32 @@ p{
     text-align: right;
 }
 
+/* --------------------------------------------------------------------------
+            Climate Page Styles
+----------------------------------------------------------------------- */
+
+/* --------------------Cards section----------------------------------- */
+
+.card{
+    border: 1px solid #00ADD8;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.card .info{
+    padding: 1em;
+}
+
+.card .info h3{
+    margin-top: 0;
+}
+
+/* -------------------------news section----------------------- */
+.news{
+    border-top: 2px solid #00ADD8
+    margin-top: 3em;
+}
+
 /* ----------------------------------------------------------
           Desktop Styles
 -------------------------------------------------------------- */
@@ -281,5 +307,55 @@ p{
 @media screen and (min-width:800px){
     .actions-list li{
         max-width: 20%;
+    }
+
+    /* ----------------------------------------------------------------------
+                            Climate Page
+    ---------------------------------------------------------------------- */
+    /* ---------------------------------------cards section------------------- */
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
+    }
+
+    /* -----------------------------------news section----------------- */
+
+    .news{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "head head"
+            "left right1"
+            "left right2"
+        ;
+
+        gap: 1em;
+    }
+
+    .news h2{
+        grid-area: head;
+    }
+
+    .news .left{
+        grid-area: left;
+    }
+
+    .news .right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    .news .right img{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .news .right h3{
+        font-size: 1.5rem;
+        margin-top: 0;
     }
 }
