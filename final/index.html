@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Final Project</title>
+  <title>Welcome to Three Star Media</title>
   <!-- custon styles -->
   <link rel="stylesheet" href="css/main.css">
   <!-- icon font -->
@@ -21,11 +21,11 @@
             <!-- we add a class to ul so that there is a small container inside the nav bar which we can put into a row in ccs  -->
             <ul class="container">
                 <li> <img src="images/logo.png" alt="media logo" class="logo"></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><input type="text" placeholder="Search"></li>
                 <li><button type="submit"><i class="im im-magnifier"></i></button></li>
             </ul>
@@ -42,7 +42,7 @@
 
                 <!-- anchor button styling comes in css -->
 
-                <a href="#">Connect With Us</a>
+                <a href="#contact">Connect With Us</a>
             </div>
         </div>
     </header>
@@ -50,17 +50,36 @@
     <!-- ---------------- Starting Main site---------------------------- -->
 
     <main class="site-main">
-        <section class="about-section">
+        <section id="about-section">
             <!-- add two divs inside -->
-            <div class="container">
+            <div class="container about-page">
                 <img src="images/about-us.jpg" alt="about us">
+                <div class="about-info">
+                    <h2>About Us</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores quidem voluptates architecto suscipit ipsa cupiditate id est temporibus laboriosam harum ea voluptate sapiente, veniam magnam necessitatibus! Error, alias eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem quae sapiente, error aut aspernatur quibusdam hic quam distinctio aperiam earum nam voluptas cupiditate odio. Reprehenderit expedita dolorem ducimus itaque.
+                        
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione laboriosam sequi commodi earum laudantium, minima, saepe molestiae ipsum ipsa asperiores iste, eius maxime! Molestias quia neque ab, deleniti atque iste!
+                    </p>
+                </div>
             </div>
-            <div class="container">
-                <h2>About Us</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores quidem voluptates architecto suscipit ipsa cupiditate id est temporibus laboriosam harum ea voluptate sapiente, veniam magnam necessitatibus! Error, alias eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem quae sapiente, error aut aspernatur quibusdam hic quam distinctio aperiam earum nam voluptas cupiditate odio. Reprehenderit expedita dolorem ducimus itaque.
+        </section>
 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione laboriosam sequi commodi earum laudantium, minima, saepe molestiae ipsum ipsa asperiores iste, eius maxime! Molestias quia neque ab, deleniti atque iste!
-                </p>
+        <section id="services">
+            <h2 class="container">Our Services</h2>
+            <!-- class for all the cards -->
+            <div class="service-cards">
+                <!-- class for digi transformation card -->
+                <div class="service-card">
+                    <img src="images/digital.jpg" alt="digital-transformation">
+                </div>
+                <!-- card info -->
+                <div class="service-info">
+                    <h3>Digital Transformation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum impedit dolor architecto illum harum velit consequatur corrupti, cumque numquam mollitia veniam similique sapiente beatae. Voluptas, dolor! Laboriosam quia velit totam?</p>
+                    <!-- link to be styled as button -->
+                    <a href="#" class="button">Digital Plans</a>
+                </div>
+              
             </div>
         </section>
     </main>
