@@ -94,15 +94,15 @@ h3,
 h4,
 h5{
     font-weight: bold;
-    margin: 1em 0 0.5;
+    margin: 1em 0 0.5em;
 }
 
 h1{
-    font-size: 5.063rem;
+    font-size: 7.5rem;
 }
 
 h2{
-    font-size: 3.375rem;
+    font-size: 4.275rem;
 }
 
 h3{
@@ -119,6 +119,7 @@ h5{
 
 p{
     margin: 1em 0;
+    font-size: 1.75rem;
 }
 
 .container {
@@ -173,7 +174,7 @@ p{
     padding-left: 0px;
 }
 
-.im{
+.im-magnifier{
     font-size: 5%;
     text-align: center;
     color: #c78c06;
@@ -222,10 +223,114 @@ p{
 
 /* banner */
 
+
+
 .banner{
     height: 1000px;
+    position: relative;
     background: #222 url(../images/main-banner.jpg) no-repeat center bottom;
     background-size: cover;
+    z-index: 1;
 }
 
+/* banner overlay */
 
+
+
+
+.welcome-banner{
+    text-align: left;
+    padding: 2rem;
+    padding-right: 2.5rem;;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 100px;
+    left: 0;
+    color: white;
+    align-content: center;
+    
+    
+}
+
+.welcome-banner::before{
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    z-index: 3;
+}
+
+.welcome-banner p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.welcome-banner h1{
+    margin-top: 75px;
+}
+
+/* styling button */
+
+.welcome-banner a{
+    background: #c78c06;
+    color: #222;
+    font-size: 1.75rem;
+    text-decoration: none;
+    padding: 1.5em 2em;
+    position: relative;
+    top: 50px;
+    left: 0;
+}
+
+.welcome-banner im-play{
+    color: #222;
+}
+/* -------------------------------------------- styling main section ------------------------- */
+
+/* styling the about section */
+
+.about-page{
+    background: #ffe6ac;
+    padding: 1.5em;
+}
+
+.about-page img{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.about-info{
+    padding: 1.5em;
+    margin: 0;
+}
+
+.about-info p{
+    font-weight: 600;
+}
+
+/* service section */
+
+.service-cards{
+    background: #ffe6ac;
+}
+
+.service-info{
+    padding: 1.5em;
+}
+
+.service-info a{
+    background: #222;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    padding: 1.5em 1.75em;
+    position: relative;
+    left: 0;
+    top: 25px;
+}
+
+.service-info{
+    margin-bottom: 2em;
+}
