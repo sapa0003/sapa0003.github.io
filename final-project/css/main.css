@@ -106,7 +106,7 @@ h2{
 }
 
 h3{
-    font-size: 2.25rem;
+    font-size: 3.25rem;
 }
 
 h4{
@@ -312,12 +312,14 @@ p{
 
 /* service section */
 
-.service-cards{
+
+.service-card{
     background: #ffe6ac;
 }
 
 .service-info{
     padding: 1.5em;
+    padding-bottom: 6em;
 }
 
 .service-info a{
@@ -333,4 +335,50 @@ p{
 
 .service-info{
     margin-bottom: 2em;
+}
+
+/* vision section */
+
+.vision-section{
+    background: #222 url(../images/vision.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.vision-info{
+    padding: 1.5em;
+    color: white;
+}
+
+.vision-info a{
+    background: #222;
+    color: white;
+    border: 1px solid #c78c06;
+    text-decoration: none;
+    font-size: 1.75rem;
+    padding: 2.5em 3em;
+    position: relative;
+    left: 0;
+    top: 50px;
+}
+
+/* styling member section */
+
+.member-card{
+    background: #ffe6ac;
+
+}
+
+.member-card :nth-child(1){
+    margin: 0;
+}
+
+.member-card :nth-child(2){ 
+    margin: 0;
+}
+
+.member-card h3,
+.member-card h4,
+.member-card p{
+    padding: 1.5em;
 }
