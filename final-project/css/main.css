@@ -98,7 +98,7 @@ h5{
 }
 
 h1{
-    font-size: 7.5rem;
+    font-size: 5.25rem;
 }
 
 h2{
@@ -190,10 +190,11 @@ p{
     height: 3.5em;
 }
 
-::placeholder{
+/* ::placeholder{ 
     font-size: 1.75rem;
     padding: 0.25em;
 }
+*/
 
 
 /* love hate */
@@ -320,6 +321,7 @@ p{
 .service-info{
     padding: 1.5em;
     padding-bottom: 6em;
+    margin-bottom: 2em;
 }
 
 .service-info a{
@@ -333,9 +335,6 @@ p{
     top: 25px;
 }
 
-.service-info{
-    margin-bottom: 2em;
-}
 
 /* vision section */
 
@@ -356,10 +355,10 @@ p{
     border: 1px solid #c78c06;
     text-decoration: none;
     font-size: 1.75rem;
-    padding: 2.5em 3em;
+    padding: 1.5em 2em;
     position: relative;
     left: 0;
-    top: 50px;
+    top: 25px;
 }
 
 /* styling member section */
@@ -370,15 +369,179 @@ p{
 }
 
 .member-card :nth-child(1){
+    padding: 0;
     margin: 0;
 }
 
 .member-card :nth-child(2){ 
+    padding: 0;
     margin: 0;
 }
 
-.member-card h3,
-.member-card h4,
+.members .member-card h3{
+    padding: 0.75em;
+    line-height: 0.25rem;
+}
+
+
+
+.members .member-card h4,
 .member-card p{
     padding: 1.5em;
+    line-height: 1.5em;
+    
+}
+
+.members .member-card h4::after{
+    display: block;
+    line-height: 0.15rem;
+    background: none repeat scroll 0 0 #c78c06;
+    content: "";
+    display: block;
+    height: 3px;
+    position: relative;
+    width: 100%;
+
+
+}
+
+/* contact section */
+
+
+/* contact header */
+
+.contact-header{
+    padding: 1.5em;
+}
+/* message */
+
+.contact{
+    margin: 2em;
+}
+
+.contact input[type=text], 
+.contact input[type=email], 
+.contact textarea {
+    width: 100%;
+    padding: 1.5em;
+    border: 1px solid #222;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  .contact textarea{
+      resize: none;
+      width: 100%;
+      height: 150px;
+  }
+
+.contact button{
+    background-color: #222;
+    color: #c78c06;
+    border: none;
+    padding: 0.15em 0.25em;
+    font-size: 2rem;
+
+}
+
+/* tabke */
+
+.contact table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+caption{
+    font-size: 3.25rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+th{
+    background: #ffe6ac;
+    text-align: center;
+}
+
+th,
+td{
+    border: 1px solid #222;
+    font-size: 1.75rem;
+    padding: 1rem;
+}
+
+/* map */
+
+.contact iframe{
+    width: 100%;
+}
+
+
+
+/* footer */
+
+.site-footer .container{
+    background: #222;
+    color: #c78c06;
+    padding: 1.5em;
+    font-size: 1rem;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+                                                 DESKTOP STYLES
+
+
+                                                 
+--------------------------------------------------------------------------------------------------- */
+
+
+/* mEDIA QUERY */
+
+@media screen and (min-width: 760px){
+
+    /* body texts */
+    h1{
+        font-size: 5.063em;
+    }
+
+    h2{
+        font-size: 3.375em;
+    }
+
+    h3,
+    .service-info a{
+        font-size: 2.25em;
+    }
+
+    h4{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    .navigation li a{
+        font-size: 1.5rem;
+    }
+
+    /* navigation */
+
+    .navigation .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation .container li{
+        flex: 1;
+        max-height: 10%;
+    }
+
+    .navigation .container li:nth-child(7){
+        flex: 2;
+    }
+
+
 }
