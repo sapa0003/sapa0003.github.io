@@ -122,11 +122,7 @@ p{
     font-size: 1.75rem;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
-}
+
 
 /* -------------------------------------------------header------------------------------------ */
 
@@ -388,7 +384,6 @@ p{
 .members .member-card h4,
 .member-card p{
     padding: 1.5em;
-    line-height: 1.5em;
     
 }
 
@@ -501,7 +496,10 @@ td{
 
 @media screen and (min-width: 760px){
 
-    /* body texts */
+    .container{
+        max-width: 1200px;
+        margin: 0 auto 1em auto; 
+    }
     h1{
         font-size: 5.063em;
     }
