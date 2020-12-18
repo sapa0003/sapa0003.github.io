@@ -167,11 +167,12 @@ p{
 /* style for search bar */
 
 #search{
-    width: 95%;
+    width: 95%; 
     height: 3.5em;
     float: left;
     margin: 0px;
     padding-left: 0px;
+
 }
 
 .im-magnifier{
@@ -209,6 +210,7 @@ p{
 .navigation .container a:focus,
 .navigation .container a.current{
     background-color: #c78c06;
+    padding: 1em;
     color: #222;
 }
 
@@ -501,7 +503,7 @@ td{
 
 /* mEDIA QUERY */
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 760px){ 
     .container{
         max-width: 1200px;
         margin: 0em auto 1.5em auto;
@@ -515,8 +517,7 @@ td{
         font-size: 3.375em;
     }
 
-    h3,
-    a{
+    h3{
         font-size: 2.25em;
     }
 
@@ -527,4 +528,183 @@ td{
     p{
         font-size: 1em;
     }
+
+    a{
+        font-size: 1.02em;
+    }
+
+    /* header */
+
+
+    .navigation .container{ 
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center
+    }
+    
+    .navigation .container li{
+        flex: 1;
+    }
+    
+    .navigation .container li:nth-child(7){
+        flex: 2;
+    }
+    
+    .navigation .container li:nth-child(1){
+        background-color: #222;
+    }
+    
+    .navigation .container li:hover,
+    .navigation .container li:focus,
+    .navigation .container li.current{
+        background-color: #222;
+    }
+    
+    .logo{
+        max-height: 120px;
+    }
+    
+    .search-button{
+        width: 20%;
+        float: right;
+    }
+    
+
+    /* banner */
+
+    .banner{
+        margin-bottom: 0;
+    }
+
+    .welcome-banner{
+        width: 80%;
+        left: 120px;
+    }
+
+    /* about */
+
+    .about-page{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5em;
+    }
+
+    .about-info,
+    .about-info h2{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* services */
+
+    .service-card{
+        margin: 0;
+
+    }
+
+    .service-info{
+        margin-bottom: 0;
+    
+    }
+
+    .service-info a{
+        display: block;
+        text-align: center;
+    }
+
+    .service-cards{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 1.5em;
+        row-gap: 1.5em;
+        grid-template-areas: 
+        "digi-trans digi-trans digi-trans marketing marketing marketing"
+        "vid-pro vid-pro web-des web-des print print"
+        ;
+    }
+
+
+    .service-cards .service-card:nth-child(1){
+        grid-area: digi-trans;
+    }
+
+    .service-cards .service-card:nth-child(2){
+        grid-area: marketing;
+    }
+
+    .service-cards .service-card:nth-child(3){
+        grid-area: vid-pro;
+    }
+
+    .service-cards .service-card:nth-child(4){
+        grid-area: web-des;
+    }
+
+    .service-cards .service-card:nth-child(5){
+        grid-area: print;
+    }
+
+    /* vision */
+
+    .vision-section{
+        height: 400px
+    }
+
+    /* members */
+
+    .members{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .member-card:nth-child(1){
+        flex: 2 50%;
+        order: 1;
+    }
+
+    .member-card:nth-child(2){
+        flex: 2 50%;
+        order: 2;
+    }
+
+    .member-card:nth-child(3){
+        flex: 2 50%;
+        order: 4
+    }
+
+    .member-card:nth-child(4){
+        flex: 2 50%;
+        order: 3;
+    }
+
+    /* contact */
+
+     .contact-section .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-header h2{
+        flex: 1 100%;
+        order: 1;
+    }
+
+    .contact:nth-child(1){
+        flex: 2 50%;
+        order: 2;
+    }
+
+    .contact:nth-child(2){
+        flex: 1 100%;
+        order: 4;
+    }
+
+    .contact:nth-child(3){
+        flex: 2 50%;
+        order: 3;
+    }
+
 }
