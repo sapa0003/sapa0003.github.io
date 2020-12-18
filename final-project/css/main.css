@@ -126,6 +126,10 @@ p{
 
 /* -------------------------------------------------header------------------------------------ */
 
+.container{
+    padding: 1.5em;
+}
+
 /* change size of the logo */
 .logo{
     max-width: 100px;
@@ -186,11 +190,7 @@ p{
     height: 3.5em;
 }
 
-/* ::placeholder{ 
-    font-size: 1.75rem;
-    padding: 0.25em;
-}
-*/
+
 
 
 /* love hate */
@@ -271,14 +271,16 @@ p{
 /* styling button */
 
 .welcome-banner a{
+    display: inline-block;
     background: #c78c06;
     color: #222;
     font-size: 1.75rem;
     text-decoration: none;
     padding: 1.5em 2em;
-    position: relative;
+    /* position: relative; 
     top: 50px;
     left: 0;
+    */
 }
 
 .welcome-banner im-play{
@@ -312,6 +314,7 @@ p{
 
 .service-card{
     background: #ffe6ac;
+    margin: 1.5em 0;
 }
 
 .service-info{
@@ -321,14 +324,16 @@ p{
 }
 
 .service-info a{
+    display: inline-block;
     background: #222;
     color: white;
     text-decoration: none;
     font-size: 1.75rem;
     padding: 1.5em 1.75em;
-    position: relative;
+    /* position: relative;
     left: 0;
     top: 25px;
+    */
 }
 
 
@@ -341,20 +346,22 @@ p{
 }
 
 .vision-info{
-    padding: 1.5em;
+    padding: 1.5em 2em;
     color: white;
 }
 
 .vision-info a{
+    display: inline-block;
     background: #222;
     color: white;
     border: 1px solid #c78c06;
     text-decoration: none;
     font-size: 1.75rem;
     padding: 1.5em 2em;
-    position: relative;
+    /* position: relative; 
     left: 0;
     top: 25px;
+    */
 }
 
 /* styling member section */
@@ -495,11 +502,11 @@ td{
 /* mEDIA QUERY */
 
 @media screen and (min-width: 760px){
-
     .container{
         max-width: 1200px;
-        margin: 0 auto 1em auto; 
+        margin: 0em auto 1.5em auto;
     }
+
     h1{
         font-size: 5.063em;
     }
@@ -509,7 +516,7 @@ td{
     }
 
     h3,
-    .service-info a{
+    a{
         font-size: 2.25em;
     }
 
@@ -520,26 +527,4 @@ td{
     p{
         font-size: 1em;
     }
-
-    .navigation li a{
-        font-size: 1.5rem;
-    }
-
-    /* navigation */
-
-    .navigation .container{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .navigation .container li{
-        flex: 1;
-        max-height: 10%;
-    }
-
-    .navigation .container li:nth-child(7){
-        flex: 2;
-    }
-
-
 }
