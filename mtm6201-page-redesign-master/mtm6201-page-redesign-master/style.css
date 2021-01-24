@@ -86,9 +86,10 @@ body{
 	
 	
 	body #nav {
+		width: auto; /* setting width to auto resets back to default property*/
 		max-width: 1200px;
 		border: none;
-		background-color: #6D8A96;
+		background-color: #8e5572;
 		
 	}
 	
@@ -211,6 +212,7 @@ body #main{
 /* styling the contact form to be more responsive */
 
 #contact .contact-form{
+	width: auto;
 	max-width: 600px;
 	background-color: #edafb8;
 	
@@ -224,7 +226,6 @@ div.contact-form-label{
 }
 
 #contact .contact-form .contact-form-input{
-	box-sizing: border-box;
 	width: 100%;
 	margin: auto;
 	border-radius: 4px;
@@ -235,7 +236,7 @@ div.contact-form-label{
 
 button{
 	background-color: #edafb8;
-	border: solid black 1px;
+	border: solid #6D8A96 1px;
 	border-radius: 4px;
 	font-size: 1.5rem;
 }
@@ -260,6 +261,8 @@ footer{
 										Desktop Styles
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* setting a media query so that when the screen is resized the layout is more appropriate for a larger */
 
 @media screen and (min-width: 600px){
 
