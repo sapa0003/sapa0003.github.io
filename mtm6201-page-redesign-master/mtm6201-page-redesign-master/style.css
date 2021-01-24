@@ -87,13 +87,12 @@ body{
 	
 	body #nav {
 		max-width: 1200px;
-		min-width: 0px;
 		border: none;
 		background-color: #6D8A96;
-		margin: auto;
+		
 	}
 	
-	/* I want to change the links to display on their own sepatrate line */
+	/* I want to change the links to display on their own sepatrate line as it is more appropriate on mobile screens */
 	
 	body #nav .nav-link{
 		display: block;
@@ -103,7 +102,7 @@ body{
 		color: #fff;
 	}
 	
-	/* nav hover focus that will change the corresponding link to pink */
+	/* nav hover focus that will change the link to black */
 	
 	body #nav .nav-link:hover,
 	body #nav .nav-link:focus,
