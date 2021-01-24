@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+                                            Custom Styles
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+body{
+
+	line-height: 1.5;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+	line-height: inherit;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+											Mobile styles
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	
+	/* styling the nav bar */
+	
+	
+	body #nav {
+		max-width: 1200px;
+		min-width: 0px;
+		border: none;
+		background-color: #6D8A96;
+		margin: auto;
+	}
+	
+	/* I want to change the links to display on their own sepatrate line */
+	
+	body #nav .nav-link{
+		display: block;
+		font-weight: normal;
+		font-size: 24px;
+		padding: 50px;
+		color: #fff;
+	}
+	
+	/* nav hover focus that will change the corresponding link to pink */
+	
+	body #nav .nav-link:hover,
+	body #nav .nav-link:focus,
+	body #nav .nav-link.current{
+		color: black;
+	}
+	
+	
+	/* home section */
+	
+	/* We will be styling the home section to have a more flowing layout and better font  */
+	
+	#main #home{
+		background-color: #8e5572;
+		padding: 100px;
+	}
+	
+	/* I chose serif for the headings to make them stand out and white font so users can read it better in contrast to the dark background */
+	
+	#home .page-title{
+		font-family:'Times New Roman', Times, serif;
+		font-size: 70px;
+		font-weight: bold;
+		text-align: left;
+		color: white;
+	}
+	
+	/* paragph text in serif to balance out the title */
+	
+	#home p{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		text-align: left;
+		color: white;
+	}
+	
+	/* about section */
+	
+	main #about{
+		background-color: #f7e1d7;
+	}
+	
+	
+	
+	#main section#about{
+		max-width: 1200px;
+		padding: 100px;
+	}
+	
+	/* because this is a subsection the title is smaller than the one for Home */
+	
+	#about .section-title{
+	font-family:'Times New Roman', Times, serif;
+	font-size: 45px;
+	font-weight: bold;
+	color: black;
+}
+
+/* i wanted to center the image under the title */
+
+#about .about-image{
+	float: none;
+	display: block;
+	width: 35%;
+	margin: 1em auto 1em auto;
+}
+/* matching the paragraph text with the one in the home section */
+
+#about p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+}
+
+/* contact us section styling */
+
+/* change the background to a brighter colour to draw attention to the call to action */
+
+body #main{
+	background-color: #edafb8;
+}
+
+/* adding the same padding as the other body sections */
+
+#main #contact{
+	padding: 100px;
+}
+
+/* matching the contact heading with the about heading */
+
+#contact .section-title{
+	font-family:'Times New Roman', Times, serif;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+/* matching contact paragraph settings to paragraphs in about */
+
+#contact p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* styling the contact form to be more responsive */
+
+#contact .contact-form{
+	max-width: 600px;
+	min-width: 200px;
+	background-color: #edafb8;
+	box-sizing: content-box;
+	
+}
+
+/* contact form label text resize so it is slightly larger than the paragraph text sized used */
+
+div.contact-form-label{
+	font-size: 16px;
+}
+
+#contact .contact-form .contact-form-input{
+	max-width: 100%;
+	min-width: 50%;
+	margin: auto;
+	border-radius: 4px;
+	border: solid #6D8A96 1px;
+}
+
+/* styling the button so it matches the them better */
+
+button{
+	background-color: #edafb8;
+	border: solid black 1px;
+	border-radius: 4px;
+	font-size: 1.5rem;
+}
+
+button:hover{
+	background-color: #f7e1d7;
+	color: inherit;
+}
+
+/* footer styling */
+
+footer{
+	max-width: 1200px;
+	padding-left: 100px;
+	text-align: center;
+	background-color: #6D8A96;
+	color: #fff;
+	margin: auto;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------	 																																										
+										Desktop Styles
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 600px){
+
+	/* for the nav in destop I wanted the nav to match the background of the home and have the links in a single line */
+
+	body #nav{
+		background-color: #8e5572;
+		display: flex;
+	}
+
+	/* text is aligned to the left to flow with the home section alignment */
+
+	body #nav .nav-link{
+	text-align: left;
+	}
+
+	/* home section */
+
+	/* I wanted to make the fonts bigger for it to be easier to read on a ful screen */
+
+	#home .page-title{
+		font-size: 95px;
+	}
+
+	#home p{
+		font-size: 18px;
+	}
+
+	/* about section */
+
+	/* matching the font sizes to the home section */
+
+	/* title is h2 so it is smaller than the h1 in home */
+
+	
+	#about .section-title{
+		font-size: 60px;
+	
+	}
+
+
+	#about p{
+		font-size: 18px;
+	}
+
+	/* resizing image */
+
+	#about .about-image{
+		width: 20%;
+		
+	}
+
+	/* contact section*/
+
+	/* styling the section text so it matches the one is about and is more readable on fullscreen */
+
+	#contact .section-title{
+		font-size: 60px;
+	}
+
+	#contact p{
+		font-size: 18px;
+	}
+
+}
