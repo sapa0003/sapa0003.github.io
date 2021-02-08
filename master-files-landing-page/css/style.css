@@ -164,7 +164,7 @@ body {
 
 /* body styling */
 
-/* setting up the backgroung colour of the page as well as the image that will stay at the center of the page the whole time. Iddong a padding on the edges to make sure text never touches the sides of the screen */
+/* setting up the backgroung colour of the page as well as the image that will stay at the center of the page the whole time. AddIng a padding on the edges to make sure text never touches the sides of the screen */
 main {
     margin: auto;
     padding: 1rem 2rem;
@@ -185,7 +185,7 @@ nav {
     margin: auto;
 }
 
-/* resizing image element */
+/* resizing logo image element */
 
 nav img {
     max-width: 5rem;
@@ -194,7 +194,7 @@ nav img {
 
 /* section */
 
-/* setting up the section grid to that the content is displayed in one coloumn */
+/* setting up the section to be a grid so that the content is displayed in one coloumn */
 
 .section {
     margin: 3rem auto;
@@ -204,12 +204,14 @@ nav img {
     row-gap: 10rem;
 }
 
-/* hiding the h1 which was only added to keep html validated */
+/* hiding the h1 to get rig of html section warning that stated it needed a header*/
 
 .hide {
     position: absolute;
     opacity: 0;
 }
+
+/* article */
 
 /* setting article styles */
 
@@ -264,6 +266,8 @@ nav img {
     font-size: 1.15rem;
 }
 
+/* positioning the checkbox so that it stay to the left of the text */
+
 #apply {
     width: 20px;
     height: 20px;
@@ -277,7 +281,7 @@ nav img {
     margin: 2rem;
 }
 
-/* styling button with the background being green and in its own line */
+/* styling button with the background being green, rounded corners and in its own line */
 
 .apply-form button {
     display: block;
@@ -293,10 +297,14 @@ nav img {
 
 }
 
+/* styling form application status link */
+
 .apply-form .status {
     font-size: 0.95rem;
     text-align: left;
 }
+
+/* styling the link in the application status paragraph to be red */
 
 .status a {
     color: #ff8480;
@@ -326,7 +334,7 @@ h5 {
     font-size: 0.8rem;
 }
 
-/* styling calculate form with flexblocks in a column so the inputs stay together and calculate is on a different line */
+/* styling calculate form with flexblocks in a column so the inputs stay together and calculate button is on a different line */
 
 .calculate-form,
 .city-hours {
@@ -339,6 +347,8 @@ h5 {
     flex-direction: column;
 }
 
+/* styling the inputs to have a bg coour of light grey and to have rounded corners */
+
 .calculate-form input {
     border: none;
     border-radius: 10px;
@@ -348,6 +358,8 @@ h5 {
     font-size: 0.65rem;
     margin: 0.25rem;
 }
+
+/* adjusting the widths of the form input using calc so that they can both display in a row together */
 
 .city-hours input:nth-child(1) {
     width: calc(20% - 0.5rem);
@@ -389,7 +401,7 @@ h5 {
 
 }
 
-/* adding a radius to facebook that will eventually cahge to none in desktop format */
+/* adding a radius to facebook that will eventually cahge to 0 in desktop format */
 
 .social-media .facebook {
     border-radius: 50%;
@@ -415,7 +427,7 @@ h5 {
 
 @media(min-width: 600px) {
 
-    /* adding extra padding as there is more in the tablet version  */
+    /* adding extra padding as there is more on the sides in the tablet version  \*/
 
     main {
         padding: 1rem 4rem;
@@ -487,7 +499,7 @@ h5 {
         grid-template-columns: 1fr 1fr;
     }
 
-    /* adding a display flex to the social-media div so that it can be justified to the end of its rown */
+    /* adding a display flex to the social-media div so that it can be justified to the end of its row */
 
     .social-media {
         display: flex;
