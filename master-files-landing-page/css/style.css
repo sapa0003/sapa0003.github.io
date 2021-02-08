@@ -278,9 +278,6 @@ h5{
 .social-media{
     margin: 1rem 0 0 0;
     text-align: center;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
 }
 
 .social-media a{
@@ -293,13 +290,10 @@ h5{
 
 }
 
-.social-media img:nth-child(1){
-    margin-left: 1rem;
-}
+/* adding a radius to facebook that will eventually cahge to none in desktop format */
 
-.social-media img:nth-child(4){
-    margin-right: 1rem;
+.social-media .facebook{
+    border-radius: 50%;
 }
-
 
 
