@@ -52,3 +52,254 @@ table {
                                             Custom Styles
 ------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	line-height: inherit;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+                                                                Mobile Styles
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* setting up the backgroung colour of the page as well as the image that will stay at the center of the page the whole time. Iddong a padding on the edges to make sure text never touches the sides of the screen */
+main{
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: #f7f7ff;
+    background-image: url(../images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    background-size: 80%;
+}
+
+
+/* nav */
+
+/* creating a flex box in the nav to make sure image stays at top lefthand corner */
+
+nav{
+    display: flex;
+    margin: auto;
+}
+
+/* resizing image element */
+
+nav img{
+    max-width: 5rem;
+    height: auto;
+}
+
+/* section */
+
+/* setting up the section grid to that the content is displayed in one coloumn */
+
+.section{
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10rem;
+}
+
+/* hiding the h1 which was only added to keep html validated */
+
+.hide{
+    position: absolute;
+    opacity: 0;
+}
+
+/* setting article styles */
+
+.headline h2{
+    font-size: 3.052rem;
+    font-weight: bold;
+    color: #333131;
+}
+
+.headline p{
+    font-size: 1.25rem;
+    color: #333131;
+}
+
+/* form */
+
+/* styling the form to have a white background and a border radius so that the corners are rounded and a drop shadow along the right and bottom sides of the form*/
+
+.apply-form{
+    max-width: 620px;
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px #333131;
+}
+
+.apply-form h3{
+    font-size: 1.953rem;
+    color: #333131;
+    font-weight: 700;
+    margin: auto;
+}
+
+.apply-form p{
+    font-size: 1.25rem;
+    color: #333131;
+    font-size: 1.25rem;
+    margin: auto;
+}
+
+/* styling the imput forms so that they have rounded corners and are the full width of form as well as have space bteween each line */
+
+.apply-form input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0.5rem 0;
+    background-color: #f7f7ff;
+    color: lightgrey;
+    font-size: 1.15rem;
+}
+
+#apply{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: auto;
+    
+}
+
+.apply-form label{
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+/* styling button with the background being green and in its own line */
+
+.apply-form button{
+    display: block;
+    width: 100%;
+    background-color: #57eeab;
+    color: #333131;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 1rem auto;
+  
+}
+
+.apply-form .status{
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.status a{
+    color: #ff8480;
+}
+
+/* footer */
+
+/* styling the footer bg colour so that it bleeds into the margin */
+
+footer{
+    background-color: #fffd8c;
+    margin: 0 -2rem -1rem -2rem;
+    padding: 1rem 2rem;
+}
+
+/* styling footer content */
+
+h5{
+    font-weight: 700;
+}
+
+.calculate P{
+    font-size: 0.8rem;
+}
+
+/* styling calculate form with flexblocks in a column so the inputs stay together and calculate is on a different line */
+
+.calculate-form,
+.city-hours{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.calculate-form input{
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f7ff;
+    color: lightgrey;
+    padding: 5px 5px;
+    font-size: 0.8rem;
+    margin: 0.25rem;
+}
+
+.city-hours input:nth-child(1){
+    width: calc(20% - 0.5rem);
+}
+
+.city-hours input:nth-child(2){
+    width: calc(80% - 0.5rem);
+}
+
+
+
+/* styling the button to have rounded corners and red background */
+
+.calculate-form button{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background-color: #ff8480;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+/* styling social links */
+
+.social-media{
+    margin: 1rem 0 0 0;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+.social-media a{
+    text-decoration: none;
+
+}
+
+.social-media img{
+    margin: 1.5rem;
+
+}
+
+.social-media img:nth-child(1){
+    margin-left: 1rem;
+}
+
+.social-media img:nth-child(4){
+    margin-right: 1rem;
+}
+
+
+
