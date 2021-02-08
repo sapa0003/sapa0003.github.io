@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,21 +139,21 @@ table {
                                             Custom Styles
 ------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-html{
+html {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     box-sizing: border-box;
 }
 
-body{
+body {
     line-height: 1.5;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
-	line-height: inherit;
+    box-sizing: inherit;
+    line-height: inherit;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -74,8 +161,11 @@ body{
 
                                                                 Mobile Styles
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* body styling */
+
 /* setting up the backgroung colour of the page as well as the image that will stay at the center of the page the whole time. Iddong a padding on the edges to make sure text never touches the sides of the screen */
-main{
+main {
     margin: auto;
     padding: 1rem 2rem;
     background-color: #f7f7ff;
@@ -90,14 +180,14 @@ main{
 
 /* creating a flex box in the nav to make sure image stays at top lefthand corner */
 
-nav{
+nav {
     display: flex;
     margin: auto;
 }
 
 /* resizing image element */
 
-nav img{
+nav img {
     max-width: 5rem;
     height: auto;
 }
@@ -106,7 +196,7 @@ nav img{
 
 /* setting up the section grid to that the content is displayed in one coloumn */
 
-.section{
+.section {
     margin: 3rem auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -116,20 +206,20 @@ nav img{
 
 /* hiding the h1 which was only added to keep html validated */
 
-.hide{
+.hide {
     position: absolute;
     opacity: 0;
 }
 
 /* setting article styles */
 
-.headline h2{
+.headline h2 {
     font-size: 3.052rem;
     font-weight: bold;
     color: #333131;
 }
 
-.headline p{
+.headline p {
     font-size: 1.25rem;
     color: #333131;
 }
@@ -138,22 +228,22 @@ nav img{
 
 /* styling the form to have a white background and a border radius so that the corners are rounded and a drop shadow along the right and bottom sides of the form*/
 
-.apply-form{
-    max-width: 620px;
+.apply-form {
+    max-width: 650px;
     background-color: white;
     padding: 1rem 1rem;
     border-radius: 25px;
     box-shadow: 1px 1px 5px #333131;
 }
 
-.apply-form h3{
+.apply-form h3 {
     font-size: 1.953rem;
     color: #333131;
     font-weight: 700;
     margin: auto;
 }
 
-.apply-form p{
+.apply-form p {
     font-size: 1.25rem;
     color: #333131;
     font-size: 1.25rem;
@@ -162,7 +252,7 @@ nav img{
 
 /* styling the imput forms so that they have rounded corners and are the full width of form as well as have space bteween each line */
 
-.apply-form input{
+.apply-form input {
     width: 100%;
     border: none;
     border-radius: 10px;
@@ -173,22 +263,22 @@ nav img{
     font-size: 1.15rem;
 }
 
-#apply{
+#apply {
     width: 20px;
     height: 20px;
     position: absolute;
     margin: auto;
-    
+
 }
 
-.apply-form label{
+.apply-form label {
     font-size: 1rem;
     margin: 2rem;
 }
 
 /* styling button with the background being green and in its own line */
 
-.apply-form button{
+.apply-form button {
     display: block;
     width: 100%;
     background-color: #57eeab;
@@ -199,15 +289,15 @@ nav img{
     border-radius: 5px;
     padding: 5px 0;
     margin: 1rem auto;
-  
+
 }
 
-.apply-form .status{
+.apply-form .status {
     font-size: 0.95rem;
     text-align: left;
 }
 
-.status a{
+.status a {
     color: #ff8480;
 }
 
@@ -215,46 +305,54 @@ nav img{
 
 /* styling the footer bg colour so that it bleeds into the margin */
 
-footer{
+footer {
+
+    /* adding display grid so when the window is streched into desktop screen later on we can divide the footer content into 2 columns */
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #fffd8c;
-    margin: 0 -2rem -1rem -2rem;
-    padding: 1rem 2rem;
+    margin: 0rem -2rem -1rem -2rem;
+    padding: 2rem 2rem;
 }
 
 /* styling footer content */
 
-h5{
+h5 {
     font-weight: 700;
 }
 
-.calculate P{
+.calculate P {
     font-size: 0.8rem;
 }
 
 /* styling calculate form with flexblocks in a column so the inputs stay together and calculate is on a different line */
 
 .calculate-form,
-.city-hours{
+.city-hours {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
 }
 
-.calculate-form input{
+.calculate-form {
+    flex-direction: column;
+}
+
+.calculate-form input {
     border: none;
     border-radius: 10px;
     background-color: #f7f7ff;
     color: lightgrey;
     padding: 5px 5px;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     margin: 0.25rem;
 }
 
-.city-hours input:nth-child(1){
+.city-hours input:nth-child(1) {
     width: calc(20% - 0.5rem);
 }
 
-.city-hours input:nth-child(2){
+.city-hours input:nth-child(2) {
     width: calc(80% - 0.5rem);
 }
 
@@ -262,7 +360,7 @@ h5{
 
 /* styling the button to have rounded corners and red background */
 
-.calculate-form button{
+.calculate-form button {
     width: 100%;
     font-size: 1.25rem;
     font-weight: 700;
@@ -275,25 +373,129 @@ h5{
 
 /* styling social links */
 
-.social-media{
+.social-media {
     margin: 1rem 0 0 0;
     text-align: center;
 }
 
-.social-media a{
+.social-media a {
     text-decoration: none;
 
 }
 
-.social-media img{
-    margin: 1.5rem;
+.social-media img {
+    margin: 1rem;
 
 }
 
 /* adding a radius to facebook that will eventually cahge to none in desktop format */
 
-.social-media .facebook{
+.social-media .facebook {
     border-radius: 50%;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------                      Media Queries
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/* ------Tablet Style--------- */
+
+@media(min-width: 520px) {
+
+
+    /* form in the apply section has the text under the button to be centered */
+
+    .apply-form .status {
+        text-align: center;
+    }
+
+}
+
+/* adding second media query at 600x to make footer form a row */
+
+@media(min-width: 600px) {
+
+    /* adding extra padding as there is more in the tablet version  */
+
+    main {
+        padding: 1rem 4rem;
+    }
+
+    /* calculate form setting the form to a row and adjusting .city-hours and button to fit together */
+
+    .calculate-form {
+        flex-direction: row;
+    }
+
+    .city-hours {
+        width: 75%;
+    }
+
+    .calculate-form button {
+        width: 25%;
+    }
+
+    /* footer */
+
+    /* adjusting footer padding to compensate for main padding changes */
+
+    footer {
+        margin: 0 -4rem -1rem -4rem;
+        padding: 2rem 4rem;
+    }
+
+}
+
+/* ---------------------------Desktop Styles--------------------- */
+
+@media(min-width: 780px) {
+
+    main {
+
+        /* changing size as the mobile size for the image is too large for desktop */
+
+
+        background-size: 40%;
+        /* changing background position so we can see most of the image even when the form is layed ontop */
+        background-position: 35% 35%;
+    }
+
+    /* making the main section a two column grid */
+
+    .section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 10rem;
+    }
+
+
+}
+
+/* adding query at 1200px that will allow the social icons to appear in a row next to the calculate form*/
+
+@media(min-width: 1200px) {
+    /* footer */
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* adding a display flex to the social-media div so that it can be justified to the end of its rown */
+
+    .social-media{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* re-ordering icons so that facebook is second last instead of first */
+
+    .social-media a:nth-child(1),
+    .social-media a:nth-child(4){
+        order: 1;
+    }
+
+    /* removing facebook border radius */
+
+    .social-media .facebook{
+        border-radius: 0;
+    }
+}
