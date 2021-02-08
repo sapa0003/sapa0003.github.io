@@ -224,14 +224,15 @@ nav img {
     color: #333131;
 }
 
+
 /* form */
 
 /* styling the form to have a white background and a border radius so that the corners are rounded and a drop shadow along the right and bottom sides of the form*/
 
 .apply-form {
-    max-width: 650px;
+    max-width: 620px;
     background-color: white;
-    padding: 1rem 1rem;
+    padding: 3rem 2rem;
     border-radius: 25px;
     box-shadow: 1px 1px 5px #333131;
 }
@@ -445,18 +446,17 @@ h5 {
 
 }
 
-/* ---------------------------Desktop Styles--------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------                                              Desktop Styles
+
+------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 @media(min-width: 780px) {
 
     main {
-
-        /* changing size as the mobile size for the image is too large for desktop */
-
-
+    /* changing size of background image as the mobile size for the image is too large for desktop */
         background-size: 40%;
-        /* changing background position so we can see most of the image even when the form is layed ontop */
-        background-position: 35% 35%;
+    /* changing background position so we can see most of the image even when the form is layed ontop */
+        background-position: 40% 35%;
     }
 
     /* making the main section a two column grid */
@@ -465,6 +465,14 @@ h5 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 10rem;
+    }
+
+    /* adding extra padding on the right side of the article section so that the text does not overlap too much on the image */
+
+    /* article */
+
+    article {
+        padding-right: 10rem;
     }
 
 
@@ -481,7 +489,7 @@ h5 {
 
     /* adding a display flex to the social-media div so that it can be justified to the end of its rown */
 
-    .social-media{
+    .social-media {
         display: flex;
         justify-content: flex-end;
     }
@@ -489,13 +497,13 @@ h5 {
     /* re-ordering icons so that facebook is second last instead of first */
 
     .social-media a:nth-child(1),
-    .social-media a:nth-child(4){
+    .social-media a:nth-child(4) {
         order: 1;
     }
 
     /* removing facebook border radius */
 
-    .social-media .facebook{
+    .social-media .facebook {
         border-radius: 0;
     }
 }
