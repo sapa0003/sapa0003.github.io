@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC</title>
+</head>
+<body>
+    
+    <header>
+        <!-- creating a nav, current page has the text bolded and logo is connected to homepage -->
+        <nav id="nav" class="about-nav">
+            <a href="index.html"><img src="mtm6201-midterm-master-files/images/logo.svg" alt="logo"></a>
+            <a href="index.html">Home</a>
+            <a href="#"> About </a>
+            <a href="#"> <strong>Contact</strong></a>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+
+        <!-- adding section for contacting arc will in two divs that will display vertically in mobie and then will be placed in a two column grid for desktop -->
+
+        <section class="contact">
+            <div class="contact-info">
+                <h2>
+                    <strong>
+                        We Eant to Hear From You
+                    </strong>
+                </h2>
+
+                <p>
+                    If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!
+                </p>
+
+                <img src="mtm6201-midterm-master-files/images/contact-img.svg" alt="contact-us">
+            </div>
+
+            <div class="contact-us-form">
+                
+            <form action="thanks.html" class="contact-form">
+                <!-- this is the title area of the form -->
+                <h2>
+                    <strong>Contact us.</strong>
+                </h2>
+
+                <!-- adding the form input area -->
+                <label for="full-name"> Full Name</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Full name">
+
+                <label for="student-number"> Student Number</label>
+                <input type="text" name="student-number" id="student-number" placeholder="Student Number">
+
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+
+                <label for="contact-form"> Message</label>
+                <textarea name="message" id="contact-form" >Message</textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        </section>
+
+        <!-- adding section with location info and map -->
+
+        <section class="location">
+            <div class="location-info">
+                <h2>
+                    <strong>Our Location.</strong>
+                </h2>
+
+                <h3>
+                    Algonquin College Student's Association
+                </h3>
+
+                <p>Monday to Friday – 8:30am to 6:00pm
+                    1385 Woodroffe Avenue (E114)
+                    Ottawa, Ontario
+                    K2G 1V8
+                    (613) 727-4723 x7711</p>
+            </div>
+
+            <div class="map" id="googleMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1401.9788884209368!2d-75.75677280402655!3d45.34966458912954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071f18a534f7%3A0xe1f667c04b98a634!2sAlgonquin%20Commons%20Theatre!5e0!3m2!1sen!2sca!4v1614626900866!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="wrapper">
+        <!-- Social media links and top page button -->
+
+        <div class="socials">
+            <p>Follow Us</p>
+
+            <div class="social-icons">
+                <a href="#">
+                    <img src="mtm6201-midterm-master-files/icons/facebook.svg" alt="fb">
+                </a>
+
+                <a href="#">
+                    <img src="mtm6201-midterm-master-files/icons/instagram.svg" alt="ig">
+                </a>
+
+                <a href="#">
+                    <img src="mtm6201-midterm-master-files/icons/twitter.svg" alt="tw">
+                </a>
+
+                <a href="#">
+                    <img src="mtm6201-midterm-master-files/icons/youtube.svg" alt="yt">
+                </a>
+            </div>
+        </div>
+
+        <!-- creating to top button -->
+
+        <div class="top">
+            <a href="#nav">Back to Top</a>
+        </div>
+    </footer>
+</body>
+</html>
