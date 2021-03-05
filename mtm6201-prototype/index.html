@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <title>ARC</title>
 </head>
 
 <body>
     
-    <header>
+    <header class="wrapper">
         <!-- creating a nav, current page has the text bolded and logo is connected to homepage -->
-        <nav id="nav" class="home-nav">
+        <nav id="nav" class="home-nav nav">
             <a href="index.html"><img src="mtm6201-midterm-master-files/images/logo.svg" alt="logo"></a>
             <a href="index.html"><strong>Home</strong></a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
     <!-- adding main with the class of wrapper the adjust margins in css -->
-    <main class="wrapper"  class="wrapper">
+    <main class="wrapper">
 
         <!-- creating section for main arc -->
 
         <section class="discover-arc">
+
+            <!-- div with arc info munis the image as when the section is flexed the information stays together  -->
 
             <div class="arc-info">
 
@@ -56,18 +65,20 @@
                         <img src="mtm6201-midterm-master-files/icons/basketball-ball-solid.svg" alt="basketball">
                         <p>Indoor Court</p>
                     </div>
+                </div>
                     
                     <div class="btn get-started">
                         <button> Get Started</button>
                     </div>
-                </div>
             </div>
 
             <div>
                 <img src="mtm6201-midterm-master-files/images/discover.svg" alt="">
             </div>
 
-            <div>
+            <!-- adding scroll icon  -->
+
+            <div class="scroll">
                 <p>scroll</p>
                 <img src="mtm6201-midterm-master-files/icons/arrow.svg" alt="scroll down arrow">
             </div>
@@ -77,26 +88,26 @@
 
         <section class="discover">
             <!-- creating div with a background image -->
-            <div>
+            <div class="discover-image">
                 <img src="mtm6201-midterm-master-files/images/school.jpg" alt="school">
             </div>
 
             <div>
-                <h2>
-                    <i>Discover</i>
-
-                </h2>
-
                 <h3>
-                    Algonquin College
+                    <i>Discover.</i>
+
                 </h3>
+
+                <h4>
+                    Algonquin College
+                </h4>
 
                 <p>
                     of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.
                 </p>
 
                 <!-- learn button is in seperate div so it can be flexed to the end in css -->
-                <div>
+                <div class="learn-more">
                     <button class="btn learn-btn">Learn More</button>
                 </div>
             </div>
@@ -108,13 +119,16 @@
             <!-- adding div for president photo and name because as the page gets larger the text flexes to the right of the image -->
             <div class="simon">
                 <img src="mtm6201-midterm-master-files/images/simon.jpg" alt="Dijanelle Simon">
-                <p>
-                    Dijanelle Simon
-                </p>
-                <p>SA President</p>
+                <h5>
+                 <strong>Dijanelle Simon</strong> 
+                </h5>
+                
+                <h5>
+                    <strong>SA President</strong> 
+                </h5>
             </div>
 
-            <div>
+            <div class="writeup">
                 <p>
                     "Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."
 
@@ -126,33 +140,33 @@
         <!-- adding section for entertainment with tow divs to create a grid in css -->
 
         <section class="entertainment">
-            <div>
+            <div class="entertainment-image">
                 <img src="mtm6201-midterm-master-files/images/entertainment.jpg" alt="entertainment">
             </div>
 
             <div>
-                <h2>
-                    <i>Discover</i>
-
-                </h2>
-
                 <h3>
-                    The Entertainment
+                    <i>Discover.</i>
+
                 </h3>
+
+                <h4>
+                    The Entertainment
+                </h4>
 
                 <p>
                     at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.
                 </p>
 
                 <!-- learn button is in seperate div so it can be flexed to the end in css -->
-                <div>
+                <div class="learn-more">
                     <button class="btn learn-btn">Learn More</button>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="wrapper">
+    <footer id="footer" class="wrapper">
         <!-- Social media links and top page button -->
 
         <div class="socials">

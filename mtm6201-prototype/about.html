@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <title>ARC</title>
 </head>
 
 <body>
 
-<header  class="wrapper">
-    <!-- creating a nav, current page has the text bolded and logo is connected to homepage -->
-    <nav id="nav" class="about-nav">
-        <a href="index.html"><img src="mtm6201-midterm-master-files/images/logo.svg" alt="logo"></a>
-        <a href="index.html">Home</a>
-        <a href="#"> <strong>About</strong> </a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+    <header class="wrapper">
+        <!-- creating a nav, current page has the text bolded and logo is connected to homepage -->
+        <nav id="nav" class="about-nav nav">
+            <a href="index.html"><img src="mtm6201-midterm-master-files/images/logo.svg" alt="logo"></a>
+            <a href="index.html">Home</a>
+            <a href="about.html"> <strong>About</strong> </a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
 
     <!-- adding main with the class of wrapper the adjust margins in css -->
@@ -28,20 +36,24 @@
                 <strong>What to expect during Construction</strong>
             </h2>
 
-            <p>With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August 2021.</p>
+            <p>With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as
+                August 2021.</p>
 
-            <p>The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone and the Gymnasium for more information on the hours, offerings, and pricing.</p>
+            <p>The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone
+                and the Gymnasium for more information on the hours, offerings, and pricing.</p>
 
             <img src="mtm6201-midterm-master-files/images/construction.svg" alt="construction">
         </section>
 
         <!-- adding about section the about div will have an image as a background -->
-
-        <div class="about">
-            <h2>
-                <strong>About</strong>
-            </h2>
-        </div>
+        <section class="about-banner">
+            <div class="about">
+                <h2>
+                    <strong>About</strong>
+                </h2>
+                <div class="overlay"></div>
+            </div>
+        </section>
         <!-- about info are placed in a section together so it can be flexed for proper window sizing -->
 
         <section class="about-info">
@@ -51,8 +63,11 @@
                     <strong>Who</strong>
                 </h3>
 
-                <p>
-                    is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.
+                 <p>
+                    is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin
+                    Community. This facility will provide our students with a place to break through perceptual barriers
+                    in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures
+                    and abilities to spark a movement.
                 </p>
             </div>
 
@@ -62,7 +77,9 @@
                 </h3>
 
                 <p>
-                    is this going to cost me? This facility will be included in your activity fee. All fee-paying students can use and participate in all activities in the building. As for the facility, it will cost Algonquin College $48.8 million.
+                    is this going to cost me? This facility will be included in your activity fee. All fee-paying
+                    students can use and participate in all activities in the building. As for the facility, it will
+                    cost Algonquin College $48.8 million.
                 </p>
             </div>
 
@@ -74,117 +91,136 @@
                 </h3>
 
                 <p>
-                    will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. 
+                    will the ARC building be? The ARC building will be located northeast of the Student Commons
+                    building, opposite of the residence. The facility will be an estimated 100,000 square feet!
+                    Connected to the Student Commons by a "Plus 15" Pedestrian Link.
                 </p>
             </div>
         </section>
 
-    <!-- services section the section div will have an image as a background -->
-    <div class="services">
-        <h2>
-            <strong>Services</strong>
-        </h2>
-    </div>
+        <!-- services section the section div will have an image as a background -->
+        <section class="service-banner">
+            <div class="services">
+                <h2>
+                    <strong>Services</strong>
+                </h2>
+                <div class="overlay"></div>
+            </div>
+        </section>
 
-    <!-- adding a services info section with info placed in divs. Will add in the images for desktop purposes but they do not show up in mobile -->
+        <!-- adding a services info section with info placed in divs. Will add in the images for desktop purposes but they do not show up in mobile -->
 
-    <section class="services-info">
+        <section class="services-info">
 
-        <div class="restaurant">
-            <h3>
-                <strong>Need a break?</strong>
-            </h3>
+            <div class="restaurant">
+                <h3>
+                    <strong>Need a break?</strong>
+                </h3>
 
-            <h4>Restaurant & Lounge</h4>
+                <h4>Restaurant & Lounge</h4>
 
-            <p>
-                will have full service throughout the day. Why not come in after a long day of class and order one of our famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling lanes! 
-            </p>
+                <p>
+                    will have full service throughout the day. Why not come in after a long day of class and order one
+                    of our famous poutines. Finished with your food and drink? Why not try out the new billiards area.
+                    Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and
+                    try out the new bowling lanes!
+                </p>
 
-            <img src="mtm6201-midterm-master-files/images/bar.jpg" alt="restaurant">
-        </div>
+                <img src="mtm6201-midterm-master-files/images/bar.jpg" alt="restaurant">
+            </div>
 
-        <div class="bowling">
-            <h3>
-                <strong>Competitive Friends?</strong>
-            </h3>
+            <div class="bowling-info">
+                <h3>
+                    <strong>Competitive Friends?</strong>
+                </h3>
 
-            <h4>Bowling Lanes</h4>
+                <h4>Bowling Lanes</h4>
 
-            <p>
-                are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no matter the weather on the Golf Simulator that will be located in the ARC building. 
-            </p>
+                <p>
+                    are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that
+                    will be part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no
+                    matter the weather on the Golf Simulator that will be located in the ARC building.
+                </p>
 
-            <img src="mtm6201-midterm-master-files/images/bowling.jpg" alt="bowling">
-        </div>
+                <img src="mtm6201-midterm-master-files/images/bowling.jpg" alt="bowling">
+            </div>
 
-        <!-- adding a section break in form of a div that will have a subscribe button that users can click on it to get a newsletter -->
+            <!-- adding a section break in form of a div that will have a subscribe button that users can click on it to get a newsletter -->
 
-        <div class="subscribe">
-            <h3>
-                Keep up to date with our news letter
-            </h3>
+            <div class="subscribe">
+                <h3>
+                    Keep up to date with our newsletter
+                </h3>
 
-            <button class="btn subscribe-btn">Subscribe</button>
-        </div>
+                <div class="btn subscribe-btn">
+                    <button>Subscribe</button>
+                </div>
 
-        <!-- regular services resume -->
+                
+            </div>
 
-        <div class="fitness">
-            <h3>
-                <strong>New Year, new me</strong>
-            </h3>
+            <!-- regular services resume -->
 
-            <h4>Fitness Rooms</h4>
+            <div class="fitness-info">
+                <h3>
+                    <strong>New Year, new me</strong>
+                </h3>
 
-            <p>
-                Cardio equipment, free weights, selectorized weight equipment and stretching areas will be located in strategically placed locations to best suit your work-out routine.. Indoor walking/running track that will test your endurancewith inclines and declines that weave around fitness nods, the gymnasiums and the lounge area. 
-            </p>
+                <h4>Fitness Rooms</h4>
 
-            <img src="mtm6201-midterm-master-files/images/fitness.jpg" alt="fitness">
-        </div>
-        
-        
-        <div class="climbing">
-            <h3>
-                <strong>Indoor Climbing?</strong>
-            </h3>
+                <p>
+                    Cardio equipment, free weights, selectorized weight equipment and stretching areas will be located
+                    in strategically placed locations to best suit your work-out routine.. Indoor walking/running track
+                    that will test your endurancewith inclines and declines that weave around fitness nods, the
+                    gymnasiums and the lounge area.
+                </p>
 
-            <h4>Rock Climbing</h4>
+                <img src="mtm6201-midterm-master-files/images/fitness.jpg" alt="fitness">
+            </div>
 
-            <p>
-                Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the ARC will be able to offer more yoga and fitness classes to fit into your busy schedule. After a busy day of rock climbing or yoga, come and enjoy our new massage therapy area.  
-            </p>
 
-            <img src="mtm6201-midterm-master-files/images/climbing.jpg" alt="rock-climbing">
-        </div>
-    </section>
+            <div class="climbing">
+                <h3>
+                    <strong>Indoor Climbing?</strong>
+                </h3>
 
-    <!-- adding section for the sponsors  -->
+                <h4>Rock Climbing</h4>
 
-    <section class="sponsors">
-        <h2>
-            <strong>
-                Special thank you to the following
-            </strong>
-        </h2>
+                <p>
+                    Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness
+                    routine, the ARC will be able to offer more yoga and fitness classes to fit into your busy schedule.
+                    After a busy day of rock climbing or yoga, come and enjoy our new massage therapy area.
+                </p>
 
-        <!-- div to put all the spnsor icons so that it can be flexxed later on when the windows change -->
-        
-        <div class="sponsor-icons">
+                <img src="mtm6201-midterm-master-files/images/climbing.jpg" alt="rock-climbing">
+            </div>
+        </section>
 
-            <img src="mtm6201-midterm-master-files/images/sa.png" alt="student-association">
+        <!-- adding section for the sponsors  -->
 
-            <img src="mtm6201-midterm-master-files/images/AC_ICON_FC_GRN_240x200.png" alt="ac-logo">
+        <section class="sponsors">
+            <h2>
+                <strong>
+                    Special thank you to the following
+                </strong>
+            </h2>
 
-            <img src="mtm6201-midterm-master-files/images/pcl.png" alt="pcl-logo">
+            <!-- div to put all the spnsor icons so that it can be flexxed later on when the windows change -->
 
-            <img src="mtm6201-midterm-master-files/images/cibc.png" alt="cibc-logo">
+            <div class="sponsor-icons">
 
-        </div>
-    </section>
+                <img src="mtm6201-midterm-master-files/images/sa.png" alt="student-association">
+
+                <img src="mtm6201-midterm-master-files/images/AC_ICON_FC_GRN_240x200.png" alt="ac-logo">
+
+                <img src="mtm6201-midterm-master-files/images/pcl.png" alt="pcl-logo">
+
+                <img src="mtm6201-midterm-master-files/images/cibc.png" alt="cibc-logo">
+
+            </div>
+        </section>
     </main>
-    
+
     <footer class="wrapper">
         <!-- Social media links and top page button -->
 
@@ -220,4 +256,5 @@
         </div>
     </footer>
 </body>
+
 </html>

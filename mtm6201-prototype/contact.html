@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <title>ARC</title>
 </head>
 <body>
     
     <header  class="wrapper">
         <!-- creating a nav, current page has the text bolded and logo is connected to homepage -->
-        <nav id="nav" class="about-nav">
+        <nav id="nav" class="about-nav nav">
             <a href="index.html"><img src="mtm6201-midterm-master-files/images/logo.svg" alt="logo"></a>
             <a href="index.html">Home</a>
-            <a href="#"> About </a>
-            <a href="#"> <strong>Contact</strong></a>
+            <a href="about.html"> About </a>
+            <a href="contact.html"> <strong>Contact</strong></a>
         </nav>
     </header>
 
@@ -26,7 +33,7 @@
             <div class="contact-info">
                 <h2>
                     <strong>
-                        We Eant to Hear From You
+                        We Want to Hear From You
                     </strong>
                 </h2>
 
@@ -57,8 +64,10 @@
 
                 <label for="contact-form"> Message</label>
                 <textarea name="message" id="contact-form" >Message</textarea>
-
-                <button type="submit">Submit</button>
+                
+                <div class="submit-btn">
+                    <button type="submit">Submit</button>
+                </div>
             </form>
             </div>
         </section>
@@ -71,15 +80,15 @@
                     <strong>Our Location.</strong>
                 </h2>
 
-                <h3>
+                <h4>
                     Algonquin College Student's Association
-                </h3>
+                </h4>
 
-                <p>Monday to Friday – 8:30am to 6:00pm
-                    1385 Woodroffe Avenue (E114)
-                    Ottawa, Ontario
-                    K2G 1V8
-                    (613) 727-4723 x7711</p>
+                <p>Monday to Friday – 8:30am to 6:00pm</p>
+                <p>1385 Woodroffe Avenue (E114)</p>    
+                <p>Ottawa, Ontario</p>    
+                <p>K2G 1V8</p>    
+                <p>(613) 727-4723 x7711</p>    
             </div>
 
             <div class="map" id="googleMap">

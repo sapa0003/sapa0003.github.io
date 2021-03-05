@@ -1,0 +1,678 @@
+/* 
+
+                            Custom Styles
+
+
+*/
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+
+/* font styles*/
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* Custom Colurs */
+
+:root{
+    --black:#3c3b3a;
+    --white: #f2f2f2;
+    --green: #26a682; 
+}
+
+/* image sizing */
+
+img{
+    max-width: 100%;
+}
+
+button{
+    box-shadow: 0px 5px 5px var(--black);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                            Mobile Styles
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* common element styles for all three pages which are the wrapper class for nav, main and footer */
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+
+#nav{
+    background-color: var(--black);
+    margin: -12.5%;
+    padding: 20%;
+}
+
+footer{
+    background-color: var(--black);
+    padding: 5% 10% 5% 10%;
+    margin: -20%;
+}
+
+/* nav */
+
+/* resizing arc logo and styling nav items into blocks and adding colour */
+
+#nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    margin-bottom: 15%;
+
+}
+
+#nav a:nth-child(4){
+    margin-bottom: -10%;
+}
+
+#nav img{
+    height: auto;
+    width: 100px;
+}
+
+/* footer */
+
+/* footer is a two element flex the social medias are together at center while back to top button is to the right */
+
+footer{
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 75px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+
+}
+
+.top img{
+    width: 25px;
+}
+
+.top p{
+    font-size: 10px;
+}
+
+
+/* --------------------------------------------------------------------------
+                Homepage Mobile styles */
+
+main{
+    padding: 10% 0 10% 0 ;
+}
+
+/* styiling the discover arc section that will be placed in a flex direction column as mobile styles has all of the elements in one column. We will hide the scroll button at the bottom of this section as it does not show up until the tablet style. */
+
+.discover-arc{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.discover-arc p{
+    font-size: 24px;
+}
+
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--green);
+}
+
+.icons p{
+    font-size: 16px;
+}
+
+.icons img{
+    width: 75px;
+}
+
+
+/* styling get started button in discover arc will serve as a template for the other buttons that will appear throughout the rest of the pages on the site */
+
+.get-started{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+.get-started button{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    padding: 10px 50px;
+    border-radius: 35px;
+}
+
+/* girl reading image */
+
+.discover-arc img{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: auto;
+}
+
+/* scroll image, have the rotate the image so the arrow is pointing down */
+
+.scroll img{
+    transform: rotate(180deg);
+    width: 35px;
+    padding-top: 0;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    display: none;
+}
+
+
+/* discover alogonquin college section and entertainment section*/
+
+/* will set the discover and entertainment images to bleed through past the container */
+
+
+.discover-image img,
+.entertainment-image img{
+    left: 47%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+}
+
+
+.discover{
+    padding-bottom: 5em;
+}
+.discover div h3,
+.entertainment div h3{
+    margin-bottom: 0;
+}
+
+.discover div h4,
+.entertainment div h4{
+    margin-top: 3%;
+    font-weight: normal;
+    color: var(--green);
+}
+
+.discover div p,
+.entertainment div p{
+    margin-top: 3%;
+    
+}
+
+.entertainment{
+    margin-top: 6em;
+}
+
+/* styling learn more buttons */
+
+/* putting the bottons in flex box as they are at the end of the row  */
+
+.learn-more{
+    display: flex;
+    justify-content: flex-end
+}
+
+.learn-btn{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin-top: 3%;
+}
+
+/* styling president section with the photo of the president with a circular white border. the background is black and the text is all white */
+
+.president{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5em;
+    margin: -12.5%;
+}
+
+.president div p{
+    padding: 1.5em;
+}
+.simon{
+    margin: 1em;
+    text-align: center;
+}
+
+.simon h5{
+    margin: 3%;
+}
+
+.simon img{
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    width: 200px;
+}
+
+
+/* --------------------------------------------------------------------------
+                About Mobile styles */
+
+
+
+/* adding banner backgrounds for about and services which bleed out  */
+
+.construction{
+    margin-bottom: 20%;
+}
+.about{
+    background: var(--white) url("../mtm6201-midterm-master-files/images/about.jpg") no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    margin: -12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.services{
+    background: var(--white) url("../mtm6201-midterm-master-files/images/services.jpg") no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    margin: -12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay{
+    background: var(--green);
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.about h2,
+.services h2{
+    color: var(--white);
+    z-index: 2;  
+}
+
+/* adding grey background to about, bowling and climbing sections */
+
+.services-info{
+    padding-top: 1em;
+}
+
+.about-info,
+.bowling-info,
+.climbing{
+    background-color: var(--white);
+    margin: 0 -12.5% 0 -12.5%;
+    padding: 2em 2.5em 3em 2.5em;
+
+}
+
+/* about info section. Italicizing the headers and decreasing the margins between content */
+
+.about-info h3{
+    font-style: italic;
+    margin-bottom: -0.2em;
+}
+
+/* services styling. We want to hide all of the images as they do not show up in mobile */
+
+.restaurant img,
+.bowling-info img,
+.fitness-info img,
+.climbing img{
+    display: none;
+}
+
+/* styling service headers so that the h4s are green and normal weight and are a bit closer together */
+
+.services-info h3{
+    margin-bottom: -0.2em ;
+}
+
+.services-info h4{
+    font-weight: normal;
+    color: var(--green);
+}
+
+.fitness-info{
+    padding-top: 1em;
+}
+
+/* styling the subscribe div so that the background is black as well as styling the button */
+
+.subscribe{
+    background-color: var(--black);
+    margin: -12.5%;
+    padding: 1em 2.5em 1em 2.5em;
+}
+
+.subscribe h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--white);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.subscribe-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-btn button{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    
+}
+
+/* styling sponsor section where the title is centered and all the logos are the same size */
+
+
+.sponsors{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors h2{
+    text-align: center;
+}
+
+.sponsor-icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.sponsor-icons img:nth-child(1){
+    width: 300px;
+    margin: 1em;
+}
+
+.sponsor-icons img:nth-child(2){
+    width: 200px;
+}
+
+.sponsor-icons img:nth-child(3){
+    width: 220px;
+    margin: 1em;
+}
+
+.sponsor-icons img:nth-child(4){
+    width: 150px;
+}
+
+/* --------------------------------------------------------------------------
+                Contact Mobile styles */
+
+/* styling the contact form */
+
+.contact-us-form {
+    max-width: 628px;
+    background-color: var(--green);
+    padding: 2em 2em 2em 2em;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px var(--black);
+    margin-top: 2em;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+    width: 91.5%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0.5rem 0;
+    font-size: 16px;
+}
+
+.contact-us-form textarea{
+    height: 100px;
+    color: gray;
+}
+
+.contact-us-form h2,
+.contact-us-form label{
+    color: var(--white);
+}
+
+.contact-us-form h2{
+    margin-top: 0;
+}
+
+/* styling submit button */
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn button{
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 35px;
+    border: none;
+    padding: 10px 20px;
+    flex-grow: 1;
+}
+
+/* location */
+
+.location-info h4{
+    font-weight: normal;
+}
+
+.location-info p:nth-child(7){
+    margin-bottom: 2em;
+}
+
+.map iframe{
+    left: 47%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                            Tablet Styles
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* common styling that have elements that are the same through all pages */
+
+@media screen and (min-width: 768px){
+    html{
+        font-family: 'Raleway', sans-serif;
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+    
+    
+    /* font styles*/
+    
+    h2{
+        font-size: 72px;
+    }
+    
+    h3{
+        font-size: 40px;
+    }
+    
+    h4{
+        font-size: 32px;
+    }
+    
+    h5{
+        font-size: 24px;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+
+    /* heading styles */
+
+    .about h2,
+    .services h2{
+        font-size: 56px;
+    }
+
+    /* button styles */
+
+    .get-started button,
+    .submit-btn button{
+        font-size: 40px;
+    }
+
+    .learn-btn{
+        font-size: 27px;
+    }
+
+    .submit-btn button{
+        font-size: 24px;
+    }
+
+    /* nav */
+
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 0;
+    }
+
+    #nav a{
+        margin-bottom: 0;
+    }
+
+    #nav a:nth-child(2),
+    #nav a:nth-child(3){
+        margin-right: 1em;
+    }
+
+    #nav a:nth-child(4){
+        margin-bottom: 0;
+    }
+
+    #nav a:nth-child(1){
+        text-align: start;
+        flex: 1;
+    }
+
+    /*--------------------------------------------------------                         home page styles */
+
+    /* discover algonquin college */
+    .learn-more{
+        margin-bottom: 2em;
+    }
+
+    /* president */
+
+    .president{
+        display: flex;
+        flex-direction: row;
+        padding: 1.5em 3em 5em 3em;
+        
+    }
+
+    .president .simon{
+       margin: auto; 
+    }
+
+    .president img{
+        width: 800px;
+        
+    }
+
+    .writeup p{
+        margin: 1em;
+    }
+}
+
+
