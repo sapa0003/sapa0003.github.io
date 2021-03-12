@@ -226,9 +226,9 @@ main{
 /* will set the discover and entertainment images to bleed through past the container */
 
 
-.discover-image img,
+ .discover-image img,
 .entertainment-image img{
-    left: 47%;
+    left: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
     max-width: 100vw;
@@ -237,10 +237,6 @@ main{
     width: 100vw;
 }
 
-
-.discover{
-    padding-bottom: 5em;
-}
 .discover div h3,
 .entertainment div h3{
     margin-bottom: 0;
@@ -259,9 +255,6 @@ main{
     
 }
 
-.entertainment{
-    margin-top: 6em;
-}
 
 /* styling learn more buttons */
 
@@ -269,7 +262,8 @@ main{
 
 .learn-more{
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    margin-bottom: 2em;
 }
 
 .learn-btn{
@@ -283,13 +277,17 @@ main{
     margin-top: 3%;
 }
 
+.entertainment .learn-more{
+    margin-bottom: auto;
+}
+
 /* styling president section with the photo of the president with a circular white border. the background is black and the text is all white */
 
 .president{
     background-color: var(--black);
     color: var(--white);
     padding: 1.5em;
-    margin: -12.5%;
+    margin: auto -12.5% auto -12.5%;
 }
 
 .president div p{
@@ -319,13 +317,13 @@ main{
 /* adding banner backgrounds for about and services which bleed out  */
 
 .construction{
-    margin-bottom: 20%;
+    margin-bottom: 2em;
 }
 .about{
     background: var(--white) url("../mtm6201-midterm-master-files/images/about.jpg") no-repeat center center;
     background-size: cover;
     height: 200px;
-    margin: -12.5%;
+    margin: auto -12.5% auto -12.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,7 +334,7 @@ main{
     background: var(--white) url("../mtm6201-midterm-master-files/images/services.jpg") no-repeat center center;
     background-size: cover;
     height: 200px;
-    margin: -12.5%;
+    margin: auto -12.5% auto -12.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,11 +362,11 @@ main{
 }
 
 .about-info,
-.bowling-info,
-.climbing{
+.bowling-card,
+.climbing-card{
     background-color: var(--white);
-    margin: 0 -12.5% 0 -12.5%;
-    padding: 2em 2.5em 3em 2.5em;
+    margin: auto -12.5% auto -12.5%;
+    padding: 3% 12.5% 3% 12.5%;
 
 }
 
@@ -381,16 +379,14 @@ main{
 
 /* services styling. We want to hide all of the images as they do not show up in mobile */
 
-.restaurant img,
-.bowling-info img,
-.fitness-info img,
-.climbing img{
+.services-info img{ 
     display: none;
 }
 
 /* styling service headers so that the h4s are green and normal weight and are a bit closer together */
 
 .services-info h3{
+    margin-top: auto;
     margin-bottom: -0.2em ;
 }
 
@@ -407,7 +403,7 @@ main{
 
 .subscribe{
     background-color: var(--black);
-    margin: -12.5%;
+    margin: auto -12.5% auto -12.5%;
     padding: 1em 2.5em 1em 2.5em;
 }
 
@@ -549,7 +545,6 @@ main{
     margin-right: -50vw;
     max-width: 100vw;
     position: relative;
-    right: 50%;
     width: 100vw;
 }
 
@@ -648,9 +643,9 @@ main{
     /*--------------------------------------------------------                         home page styles */
 
     /* discover algonquin college */
-    .learn-more{
+    /* .learn-more{
         margin-bottom: 2em;
-    }
+    } */
 
     /* president */
 
@@ -672,6 +667,40 @@ main{
 
     .writeup p{
         margin: 1em;
+    }
+
+    /* --------------------------------------------------------------------------------------------  about page styles */
+
+    /* Placing the cards in a 2 column so that when they appear the image is beside the text and take the same amount of space in the section */
+
+    .card{
+        display: grid;
+        grid-template-columns: 218px 374px;
+        grid-template-rows: 378px;
+        grid-column-gap: 1em;
+        
+    }
+
+    .services-info img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+     /* --------------------------------------------------------------------------------------------  Contact page styles */
+
+     /* contact form text area growns and sumbit button is flexed to the end */
+
+     .contact-us-form textarea{
+         height: 148px;
+     }
+
+     .submit-btn{
+         justify-content: flex-end;
+     }
+
+     .submit-btn button{
+        flex-grow: 0;
     }
 }
 

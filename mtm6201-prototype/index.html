@@ -87,9 +87,14 @@
         <!-- adding second section for discover algonquin college becomes a two row to two column grid in css-->
 
         <section class="discover">
-            <!-- creating div with a background image -->
+            <!-- creating div with a background image addind picture tag so that at different screen sizes the images fit the screens-->
             <div class="discover-image">
-                <img src="mtm6201-midterm-master-files/images/school.jpg" alt="school">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="mtm6201-midterm-master-files/images/school-375.jpg">
+                    <source media="(max-width: 800px)" srcset="mtm6201-midterm-master-files/images/school-768.jpg">
+                    <source media="(min-width: 801px)" srcset="mtm6201-midterm-master-files/images/school-813.jpg">
+                    <img src="mtm6201-midterm-master-files/images/school-813.jpg" alt="kids in grad caps">
+                </picture>  
             </div>
 
             <div>
@@ -141,7 +146,12 @@
 
         <section class="entertainment">
             <div class="entertainment-image">
-                <img src="mtm6201-midterm-master-files/images/entertainment.jpg" alt="entertainment">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="mtm6201-midterm-master-files/images/entertainment-375.jpg">
+                    <source media="(max-width: 800px)" srcset="mtm6201-midterm-master-files/images/entertainment-768.jpg">
+                    <source media="(min-width: 801px)" srcset="mtm6201-midterm-master-files/images/entertainment-813.jpg">
+                    <img src="mtm6201-midterm-master-files/images/entertainment-813.jpg" alt="friends toasting">
+                </picture> 
             </div>
 
             <div>
