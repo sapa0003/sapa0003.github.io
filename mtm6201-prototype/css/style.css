@@ -206,6 +206,7 @@ main{
     align-items: center;
     text-align: center;
     color: var(--green);
+    
 }
 
 .icons p{
@@ -214,6 +215,11 @@ main{
 
 .icons img{
     width: 75px;
+}
+
+
+.arc-info .icons img{
+    padding-bottom: 0px;
 }
 
 
@@ -485,8 +491,6 @@ main{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
-
 }
 
 .sponsor-icons img:nth-child(1){
@@ -680,6 +684,16 @@ main{
 
     /*--------------------------------------------------------                         home page styles */
 
+    /* resizing icons so that they can fit together on a sinlge row */
+    
+    .icons img{
+        width: 50px;
+    }
+    
+    .fitness img{
+        width: 63px;
+    }
+
     /* displaying the scroll button that as it is the appopriate screen width */
 
     .scroll{
@@ -789,6 +803,8 @@ main{
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 
+/* first desktop media query is for the purpose of changing the entertainment and discover images to a horizontal card disply. This for the purpose of not showing a margin gap to the right of the screen as the page gets larger.  */
+
 @media screen and (min-width: 800px){
 
     .discover-image img, .entertainment-image img {
@@ -828,7 +844,10 @@ main{
     }
 }
 
+
 /* -------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* second query is responsible for arrangling all the content into a more horizantal view. This makes so the user can spend less time scrolling down to view as the content is more readable on a larger screen. */
 
 @media screen and (min-width: 1000px){
 
@@ -839,6 +858,10 @@ main{
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 4em;
 
+}
+
+.icons{
+    flex-direction: row;
 }
 
 .get-started{
@@ -922,7 +945,7 @@ main{
 
 .contact{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 628px;
     grid-template-rows: 801px;
     grid-column-gap: 2em;
 }
@@ -935,8 +958,6 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2em;
-
-
 }
 
 .map iframe{
