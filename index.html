@@ -18,7 +18,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#index.html">
-            <img src="portfolio-assets/logo.svg" alt="" width="70" height="70">
+            <img src="portfolio-assets/logo.svg" alt="site logo" width="70" height="70">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
@@ -83,24 +83,63 @@
         <div class="row">
           <h2>Skills</h2>
           <!-- this div will have the skill icons that will have the text displayed in column format at smaller screens and then row at larger screens -->
-          <div class="icons">
-            <div class="photography">
+          <div class="icons text-center text-lg-start col-lg-6">
+            <div class="photography d-lg-flex">
               <img src="portfolio-assets/photgraphy.svg" alt="photgraphy">
-              <h5>Photography</h5>
+              <h5 class="align-self-lg-center">Photography</h5>
             </div>
-            <div class="video">
+            <div class="video d-lg-flex">
               <img src="portfolio-assets/video.svg" alt="video">
-              <h5>Video</h5>
+              <h5 class="align-self-lg-center">Video</h5>
             </div>
-            <div class="design">
+            <div class="design d-lg-flex">
               <img src="portfolio-assets/graphic-design.svg" alt="graphic design">
-              <h5>Graphic Design</h5>
+              <h5 class="align-self-lg-center">Graphic Design</h5>
+            </div>
+          </div>
+          <!-- adding div where we will place the progress bars -->
+          <div class="program-skills col-lg-6 text-center text-lg-start">
+            <div class="photoshop">
+              <p>Photoshop</p>
+              <img src="portfolio-assets/photoshop-skill.svg" alt="photoshop skill">
+            </div>
+            <div class="lightroom">
+              <p>lightroom</p>
+              <img src="portfolio-assets/lightroom-skill.svg" alt="lightroom skill">
+            </div>
+            <div class="illustrator">
+              <p>Illustrator</p>
+              <img src="portfolio-assets/illustrator-skill.svg" alt="illustrator skill">
+            </div>
+            <div class="premiere-pro">
+              <p>Premiere Pro</p>
+              <img src="portfolio-assets/premiere-skill.svg" alt="premiere skill">
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- adding section for the user to download resume -->
+
+      <div class="container text-center">
+        <h2>Download my Resume below</h2>
+        <button type="button" class="btn btn-secondary btn-lg rounded-0">Resume</button>
+      </div>
+
+      <!-- adding footer element with logo, menu directory, and social media that is all in one line in desktop -->
+      <footer class="footer bg-dark">
+        <div class="row text-center d-lg-flex">
+          <img class="col-lg-4" src="portfolio-assets/logo.svg" alt="site logo" width="50" height="55">
+          <div class="directory d-flex justify-content-evenly align-self-lg-center col-lg-4">
+            <h6 class="text-white">Home</h6>
+            <h6 class="text-white">Work</h6>
+            <h6 class="text-white">Contact</h6>
+          </div>
+          <a class="col-lg-4" href="https://www.instagram.com/nesia_snaps/">
+            <img src="portfolio-assets/instagram.svg" alt="instagram">
+          </a>
+        </div>
+      </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
