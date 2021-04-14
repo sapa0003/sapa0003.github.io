@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <g id="Group_49" data-name="Group 49" transform="translate(-112 -1538)">
+    <path id="Path_209" data-name="Path 209" d="M48,0A48,48,0,1,1,0,48,48,48,0,0,1,48,0Z" transform="translate(112 1538)" fill="#ce963b"/>
+    <path id="video-solid" d="M27.433,64H3.9A3.71,3.71,0,0,0,0,67.485V88.515A3.71,3.71,0,0,0,3.9,92H27.433a3.71,3.71,0,0,0,3.9-3.485V67.485A3.71,3.71,0,0,0,27.433,64Zm15.455,2.749-8.943,5.513V83.739l8.943,5.505C44.617,90.308,47,89.222,47,87.363V68.63C47,66.778,44.626,65.684,42.887,66.749Z" transform="translate(139.5 1510)" fill="none" stroke="#fff" stroke-width="3"/>
+  </g>
+</svg>

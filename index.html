@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Nesia Saparno Portfolio</title>
+  </head>
+  <body>
+    <!-- creating a collapsable navbar only at mobile -->
+      <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#index.html">
+            <img src="portfolio-assets/logo.svg" alt="" width="70" height="70">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4 ">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        
+      <!-- creating the main area of the web page -->
+
+      <!-- this is the main banner header that will have a background image that will be added in css -->
+      <div class="container-fluid main-banner bg-image text-center" style="background-image: url(portfolio-assets/moon.jpg); background-size: cover; width: 100vw; height: 100vh; background-position: center center;">
+        <img style="width: 200px;" src="portfolio-assets/logo.svg" alt="logo">
+        <h1 class="text-white"> Nesia Saparno</h1>
+        <div class="row text-center text-white">
+          <h4 class="col-4 text-end">
+            Photography
+          </h4>
+          <h4 class="col-4">
+            Video
+          </h4>
+          <h4 class="col-4 text-start">
+            Graphic Design
+          </h4>
+        </div>
+      </div>
+
+      <!-- section that will contain info about me -->
+
+      <div class="container about-me">
+        <div class="row">
+          <!-- this about me header will be visible above the image on small and medium screens on large screen we want it to not be displayed -->
+            <h2 class="text-center d-lg-none">About Me</h2>
+            <img class="col-lg-6" src="portfolio-assets/12_SAPARNO_N.jpg" alt="Nesia">
+            <!-- for large screen we want the title and paragraph to be in the same column hence why this div has both the heading and paragraph. The h2 will only be visible for large screens theis way the text can be to the right of the image -->
+            <div class="about-info col-lg-6">
+              <h2 class="d-none d-lg-block">About Me</h2>
+              <p class="float-lg-end">
+                Hello, I’m Nesia. I love photography and videography. I am a graduate from the University of Ottawa with a BA in Communication which cultivated my passion in working with new media. I have been able to use my skills to tell stories for various clients covering fashion, music and health.
+                I would describe myself as someone who is enthusiastic and adventurous. I love photographing my travels and constantly push myself out of my comfort zone.
+                When I don’t have my camera on hand, I enjoy singing, playing the guitar and petting my cat. All at the same time of course.
+                
+              </p>
+            </div>
+        </div>
+      </div>
+
+      <!-- this section is for the skills area -->
+
+      <div class="container skills">
+        <div class="row">
+          <h2>Skills</h2>
+          <!-- this div will have the skill icons that will have the text displayed in column format at smaller screens and then row at larger screens -->
+          <div class="icons">
+            <div class="photography">
+              <img src="portfolio-assets/photgraphy.svg" alt="photgraphy">
+              <h5>Photography</h5>
+            </div>
+            <div class="video">
+              <img src="portfolio-assets/video.svg" alt="video">
+              <h5>Video</h5>
+            </div>
+            <div class="design">
+              <img src="portfolio-assets/graphic-design.svg" alt="graphic design">
+              <h5>Graphic Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  </body>
+</html>
