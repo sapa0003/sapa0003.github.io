@@ -1,0 +1,74 @@
+/* custom css for the web font */
+
+h1,
+h2,
+h3,
+button{
+    font-family: lust-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4,
+h5,
+p,
+a,
+form{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+/* adjusting font sizes for each of the heading and paragraph styles */
+
+h1{
+    font-size: 67px;
+}
+
+h2,
+.btn{
+    font-size: 40px;
+}
+
+a{
+    font-size: 20px;
+}
+
+.about-me p{
+    font-size: 20px;
+}
+
+.contact-main form .btn{
+    font-size: 24px;
+}
+
+.about-me h2,
+.about-me p,
+.talk h1{
+    color: #E7CA9D;
+}
+
+.btn{
+    color: #CE963B;
+    background-color: black;
+}
+
+/* styling for page background colours */
+
+.about-me{
+    background: #2e6036;
+}
+
+.resume{
+    background: #e7ca9d;
+}
+
+.talk .img-thumbnail{
+    background-color: #e7ca9d;
+}
+
+form{
+    background-color: #e7ca9d;
+}
+
+.contact-main{
+    background: #2e6036;
+}

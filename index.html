@@ -4,10 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <!-- adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/paf1gks.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Nesia Saparno Portfolio</title>
   </head>
   <body>
@@ -39,11 +44,11 @@
       </nav>
         
       <!-- creating the main area of the web page -->
-
       <!-- this is the main banner header that will have a background image that will be added in css -->
-      <div class="container-fluid main-banner bg-image text-center" style="background-image: url(portfolio-assets/moon.jpg); background-size: cover; width: 100vw; height: 100vh; background-position: center center;">
-        <img style="width: 200px;" src="portfolio-assets/logo.svg" alt="logo">
-        <h1 class="text-white"> Nesia Saparno</h1>
+      
+      <div class="container-fluid main-banner bg-image text-center w-100" style="background-image: url(portfolio-assets/moon.jpg); background-size: cover; height: 100vh; background-position: center center;">
+        <img class="mt-5" style="width: 200px;" src="portfolio-assets/logo.svg" alt="logo">
+        <h1 class="text-white mt-5 mb-3"> Nesia Saparno</h1>
         <div class="row text-center text-white">
           <h4 class="col-4 text-end">
             Photography
@@ -59,14 +64,15 @@
 
       <!-- section that will contain info about me -->
 
-      <div class="container about-me">
-        <div class="row">
+      <div class="container-fluid about-me mb-3">
+        <div class="container about-me-info">
+          <div class="row">
           <!-- this about me header will be visible above the image on small and medium screens on large screen we want it to not be displayed -->
-            <h2 class="text-center d-lg-none">About Me</h2>
-            <img class="col-lg-6" src="portfolio-assets/12_SAPARNO_N.jpg" alt="Nesia">
+            <h2 class="text-center d-lg-none mt-3">About Me</h2>
+            <img class="col-lg-6 mt-lg-3 mb-lg-3" src="portfolio-assets/nesia-portrait.jpg" alt="Nesia">
             <!-- for large screen we want the title and paragraph to be in the same column hence why this div has both the heading and paragraph. The h2 will only be visible for large screens theis way the text can be to the right of the image -->
             <div class="about-info col-lg-6">
-              <h2 class="d-none d-lg-block">About Me</h2>
+              <h2 class="d-none d-lg-block mt-lg-3">About Me</h2>
               <p class="float-lg-end">
                 Hello, I’m Nesia. I love photography and videography. I am a graduate from the University of Ottawa with a BA in Communication which cultivated my passion in working with new media. I have been able to use my skills to tell stories for various clients covering fashion, music and health.
                 I would describe myself as someone who is enthusiastic and adventurous. I love photographing my travels and constantly push myself out of my comfort zone.
@@ -75,26 +81,26 @@
               </p>
             </div>
         </div>
+        </div>  
       </div>
 
       <!-- this section is for the skills area -->
-
       <div class="container skills">
-        <div class="row">
+        <div class="row mb-3">
           <h2>Skills</h2>
           <!-- this div will have the skill icons that will have the text displayed in column format at smaller screens and then row at larger screens -->
           <div class="icons text-center text-lg-start col-lg-6">
-            <div class="photography d-lg-flex">
+            <div class="photography d-lg-flex mb-2">
               <img src="portfolio-assets/photgraphy.svg" alt="photgraphy">
-              <h5 class="align-self-lg-center">Photography</h5>
+              <h5 class="align-self-lg-center ms-lg-2">Photography</h5>
             </div>
-            <div class="video d-lg-flex">
+            <div class="video d-lg-flex mb-2">
               <img src="portfolio-assets/video.svg" alt="video">
-              <h5 class="align-self-lg-center">Video</h5>
+              <h5 class="align-self-lg-center ms-lg-2">Video</h5>
             </div>
-            <div class="design d-lg-flex">
+            <div class="design d-lg-flex mb-2">
               <img src="portfolio-assets/graphic-design.svg" alt="graphic design">
-              <h5 class="align-self-lg-center">Graphic Design</h5>
+              <h5 class="align-self-lg-center ms-lg-2">Graphic Design</h5>
             </div>
           </div>
           <!-- adding div where we will place the progress bars -->
@@ -104,7 +110,7 @@
               <img src="portfolio-assets/photoshop-skill.svg" alt="photoshop skill">
             </div>
             <div class="lightroom">
-              <p>lightroom</p>
+              <p>Lightroom</p>
               <img src="portfolio-assets/lightroom-skill.svg" alt="lightroom skill">
             </div>
             <div class="illustrator">
@@ -120,19 +126,23 @@
       </div>
 
       <!-- adding section for the user to download resume -->
-
-      <div class="container text-center">
-        <h2>Download my Resume below</h2>
-        <button type="button" class="btn btn-secondary btn-lg rounded-0">Resume</button>
+      <div class="container-fluid resume">
+        <div class="container text-center">
+          <h2 class="mt-3">Download my Resume below</h2>
+          <a href="portfolio-assets/nesia-saparno-resume-design.pdf" download="nesia-saparno-resume" class="btn btn-secondary btn-lg rounded-0 mb-3" style="width: 259px; height: 85px;" role="button">
+            Resume
+          </a>
+        </div>
       </div>
+
 
       <!-- adding footer element with logo, menu directory, and social media that is all in one line in desktop -->
       <footer class="footer bg-dark">
         <div class="row text-center d-lg-flex">
-          <a class="col-lg-4" href="index.html">
+          <a class="col-lg-4 mt-3" href="index.html">
             <img  src="portfolio-assets/logo.svg" alt="site logo" width="50" height="55">
           </a>
-          <div class="directory d-flex justify-content-evenly align-self-lg-center col-lg-4">
+          <div class="directory d-flex justify-content-evenly align-self-lg-center col-lg-4 mt-1">
             <a class="text-decoration-none" href="index.html">
               <h6 class="text-white">Home</h6>
             </a>
@@ -144,7 +154,7 @@
             </a>
             
           </div>
-          <a class="col-lg-4" href="https://www.instagram.com/nesia_snaps/">
+          <a class="col-lg-4 mt-lg-3 mb-3" href="https://www.instagram.com/nesia_snaps/">
             <img src="portfolio-assets/instagram.svg" alt="instagram">
           </a>
         </div>
