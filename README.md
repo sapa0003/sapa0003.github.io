@@ -1,4 +1,4 @@
-Refleaction
+Reflection
 
 The mockup for this website was created for this semester's user experience class. I wanted to create a website that would be easy to code based on my knowledge learned in this class but still be aesthetically pleasing and user friendly. To simplify the code so I could create it in an reasonable amout of time I used Bootstrap to create the majority of the framework. I stuck to using elements that I was already familiar on using because it was easy me to troubleshoot and find solutions to certain issues as I already had the knowledge of how each component worked and how they need to look like in the end. To simplify the coding process my skill icons and progress bars were created using adobe XD, the icons were taken from icon fonts and I later added on a circle background in XD and saved them as a newer svg as I was unfamiliar in creating a icon in a shape.
 
